@@ -161,19 +161,31 @@
         </div><!-- Segunda col -->
 
     <div class="column-3"><!-- Tercera col -->
-
-        Coordinador:
-        <a href="">Andres Salazar</a>
-        Capitán:
-        <a href="">Felipe Hernandez</a>
-        Estado:
-        <a href="">Maestria Nvl 1</a>
-
-  <h6 style="color: #FBB829">Visión:</h6>
+    <table class="table table-borderless">
+        <tbody>
+            <tr>
+        <td><h6>Coordinador:</h6></td>
+        <td><a href="">Andres Salazar</a></td>
+        </tr>
+        <tr>
+        <td><h6>Capitán:</h6></td>
+        <td><a href="">Felipe Hernandez</a></td>
+        </tr>
+        <tr>
+        <td><h6>Estado:</h6></td>
+        <td><a href="">Maestria Nvl 1</a></td>
+        </tr>
+        <tr><td>
+  <h6 >Visión:</h6>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-    <h6 style="color: #FBB829">Legado:</h6>
+        </td>
+        </tr>
+        <tr><td>
+    <h6>Legado:</h6>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-
+        </td>
+        </tr>
+        <tr><td>
   <h6 style="color: #FBB829">Enrolamiento:</h6>
 
   <ul>
@@ -182,11 +194,13 @@
       <li style="color: #000000">250 Elevaciones</li>
       <li style="color: #000000">68 Angeles activos</li>
   </ul>
-
-
+</td></tr>
+    <tr><td>
   <h6 style="color: #FBB829">Salto cuantico:</h6>
   <p>10 Bailarinas</p>
-
+  </td></tr>
+    </tbody>
+    </table>
         </div><!-- Tercera col -->
 
     <div class="column-4"><!-- Cuarta col -->
@@ -219,7 +233,7 @@
 
 body {
     font-family: 'Source Sans Pro', Arial, sans-serif;
-    background-color: #AAACB2;
+    background: #AAACB2;
 }
 
 #wrapper {
@@ -346,6 +360,15 @@ body {
     grid-column-end: 10;
     grid-row-start: 1;
     background: #FFF;
+}
+.column-3 > table > tbody > tr > td > h6 {
+    color: #FBB829;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.column-3 > table > tbody > tr > td > a {
+    color: #777;
 }
 
 .column-4 {

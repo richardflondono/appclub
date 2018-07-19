@@ -2,7 +2,7 @@
     <div class="col-xl-12">
         <div class="row">
             <div class="col-md-4">
-                <div class="container">
+                <div class="my-container">
                     <h2>Bienvenid@s</h2>
 
                     <p>Esta es tu plataforma de transformación, creación y progreso.<br>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
 
-                <div class="container">
+                <div class="my-container">
                     <h2>¿Aún no eres parte?</h2>
 
                     <p>Somos una comunidad comprometida con crear un mundo más amoroso, justo y poderoso.<br>
@@ -61,7 +61,7 @@ input {
     color: #FFF;
 }
 
-.container {
+.my-container {
     width: 100%;
     padding: 25px 45px;
     margin: 40px auto;
@@ -69,7 +69,7 @@ input {
     border: 2px solid #AAA;
 }
 
-.container div {
+.my-container div {
     margin: 0 auto;
     text-align: center;
 }
@@ -150,7 +150,7 @@ export default {
             .then(
                 user => {
                     alert(this.email+'a iniciado sesion ');
-                    this.$router.push('/');
+                    this.$router.go({path: this.$router.path});
                 },
                 err => {
                     alert(err.message);
