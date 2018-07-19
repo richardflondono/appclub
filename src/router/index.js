@@ -14,7 +14,7 @@ Vue.use(Router)
  let router = new Router({
   routes: [
     {
-      path: '/user',
+      path: '/',
       name: 'user',
       component: UserHome,
           meta: {
