@@ -7,17 +7,17 @@
 
                     <p>Esta es tu plataforma de transformación, creación y progreso.<br>
                     <span>¿Que meta extraordinario vas a cumplir hoy?</span></p>
-                    
-                    <input type="text" placeholder="Codigo de Usuario">
+
+                    <input type="text" placeholder="Codigo de Usuario" v-model="email">
                     <a href="">Otras formas de ingreso</a>
-                    
-                    <input type="password" placeholder="Pín de Elite">
+
+                    <input type="password" placeholder="Pín de Elite" v-model="password">
                     <a href="">Olvide mi contraseña</a>
 
                     <p style="text-transform: uppercase; border-bottom:1px solid #FFE045;"><span>Ir directo a:</span></p>
 
                     <div style="width: 95%;">
-                    <button type="button" class="btn">Inicio</button>                    
+                    <button type="button" class="btn" v-on:click="login">Inicio</button>
                     <button type="button" class="btn">Comunidad</button>
                     <button type="button" class="btn">Negocios</button>
                     </div>
@@ -28,7 +28,7 @@
 
                 <p>Somos una comunidad comprometida con crear un mundo más amoroso, justo y poderoso.<br>
                 <span>¿Listo para crear metas extraordínarias</span></p>
-                
+
                 <div style="width: 95%;">
                 <button type="button" class="btn">Iniciar mi Entrenamiento</button>
                 </div>
@@ -37,11 +37,11 @@
             </div>
 
             <div class="col-md-7">
-                <h2 style="text-weight:500;">Este es un mensaje muy poderoso de invitación a ser parte de la comunidad más 
+                <h2 style="text-weight:500;">Este es un mensaje muy poderoso de invitación a ser parte de la comunidad más
                 poderosa del mundo desde el <span>amor</span> y el <span>compromiso</span></h2>.
             </div>
         </div>
-    
+
     </div>
 </template>
 
@@ -159,3 +159,4 @@ export default {
 
     }
 }
+</script>
