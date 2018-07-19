@@ -8,31 +8,33 @@
                     <p>Esta es tu plataforma de transformación, creación y progreso.<br>
                     <span>¿Que meta extraordinario vas a cumplir hoy?</span></p>
 
-                    <input type="text" placeholder="Codigo de Usuario" v-model="email">
+                    <input type="text" v-model="email" placeholder="Codigo de Usuario">
                     <a href="">Otras formas de ingreso</a>
 
-                    <input type="password" placeholder="Pín de Elite" v-model="password">
+                    <input type="password" v-model="password" placeholder="Pín de Elite">
                     <a href="">Olvide mi contraseña</a>
 
                     <p style="text-transform: uppercase; border-bottom:1px solid #FFE045;"><span>Ir directo a:</span></p>
 
                     <div style="width: 95%;">
-                    <button type="button" class="btn" v-on:click="login">Inicio</button>
-                    <button type="button" class="btn">Comunidad</button>
-                    <button type="button" class="btn">Negocios</button>
+
+                    <button type="button" v-on:click="login" class="btn">Inicio</button>
+                    <button type="button" v-on:click="login" class="btn">Comunidad</button>
+                    <button type="button" v-on:click="login" class="btn">Negocios</button>
+
                     </div>
                 </div>
 
-            <div class="container">
-                <h2>¿Aún no eres parte?</h2>
+                <div class="container">
+                    <h2>¿Aún no eres parte?</h2>
 
-                <p>Somos una comunidad comprometida con crear un mundo más amoroso, justo y poderoso.<br>
-                <span>¿Listo para crear metas extraordínarias</span></p>
+                    <p>Somos una comunidad comprometida con crear un mundo más amoroso, justo y poderoso.<br>
+                    <span>¿Listo para crear metas extraordínarias</span></p>
 
-                <div style="width: 95%;">
-                <button type="button" class="btn">Iniciar mi Entrenamiento</button>
+                    <div style="width: 95%;">
+                    <button type="button" class="btn">Iniciar mi Entrenamiento</button>
+                    </div>
                 </div>
-            </div>
 
             </div>
 
@@ -156,7 +158,6 @@ export default {
             );
             e.preventDefault();
         }
-
     }
 }
 </script>
