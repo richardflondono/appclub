@@ -14,9 +14,9 @@ Vue.use(Router)
  let router = new Router({
   routes: [
     {
-      path: '/',
-      name: 'dashboard',
-      component: Dashboard,
+      path: '/user',
+      name: 'user',
+      component: UserHome,
           meta: {
           requiresAuth: true
           }
@@ -30,15 +30,15 @@ Vue.use(Router)
       }
     },
     {
-      path: '/new',
-      name: 'new-user',
-      component: NewUser,
+      path: '/admin',
+      name: 'admin-home',
+      component: AdminHome,
       meta: {
           requiresAuth: true
           }
     },
     {
-      path: '/edit/:user_id',
+      path: '/user',
       name: 'edit-user',
       component: EditUser,
       meta: {
@@ -59,9 +59,9 @@ Vue.use(Router)
   router.beforeEach((to, from, next) => {
       //check  for  requiresAuth
         if (to.matched.some(record => record.meta.requiresAuth)) {
-          //check if is not logged in 
+          //check if is not logged in
               if (!firebase.auth().currentUser) {
-                  //go to login 
+                  //go to login
                     next({
                       path: '/login',
                       query: {
@@ -69,13 +69,13 @@ Vue.use(Router)
                       }
               });
     }else {
-        //preoced to the road 
+        //preoced to the road
           next();
       }
   } else if (to.matched.some(record => record.meta.requiresGuest)) {
-      //check if is logged in 
+      //check if is logged in
         if (firebase.auth().currentUser) {
-            //go to login 
+            //go to login
               next({
                 path: '/',
                 query: {
@@ -83,7 +83,7 @@ Vue.use(Router)
                   }
         });
     } else {
-        //preoced to the road 
+        //preoced to the road
           next();
       }
   }else {

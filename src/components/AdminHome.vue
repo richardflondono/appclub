@@ -69,7 +69,7 @@ Specifies that a  element should render in one solid color (noshaded), instead o
         <td>mary@example.com</td>
       </tr>
       <tr>
-         
+
         <td style="color: #FBB829">Estado:</td>
         <td>Dooley</td>
         <td>dooley@example.com</td>
@@ -92,11 +92,11 @@ Specifies that a  element should render in one solid color (noshaded), instead o
                 </div>
                </div>
                <div class="col-sm-8">
-                   
+
                    <h6 style="color: #FBB829">Nombre del usuario</h6>
                    <p>Estado del registro</p>
                    <p  style="color: #808080">Cel: 3005069812</p>
-                   
+
                </div>
            </div>
         </td>
@@ -107,15 +107,15 @@ Specifies that a  element should render in one solid color (noshaded), instead o
                 </div>
                </div>
                <div class="col-sm-8">
-                   
+
                    <h6 style="color: #FBB829">Nombre del usuario</h6>
                    <p>Estado del registro</p>
                    <p  style="color: #808080">Cel: 3005069812</p>
-                   
+
                </div>
            </div>
         </td>
-        
+
       </tr>
       <tr>
          <td>
@@ -125,11 +125,11 @@ Specifies that a  element should render in one solid color (noshaded), instead o
                 </div>
                </div>
                <div class="col-sm-8">
-                   
+
                    <h6 style="color: #FBB829">Nombre del usuario</h6>
                    <p>Estado del registro</p>
                    <p  style="color: #808080">Cel: 3005069812</p>
-                   
+
                </div>
            </div>
          </td>
@@ -140,17 +140,17 @@ Specifies that a  element should render in one solid color (noshaded), instead o
                 </div>
                </div>
                <div class="col-sm-8">
-                  
+
                    <h6 style="color: #FBB829">Nombre del usuario</h6>
                    <p>Estado del registro</p>
                    <p  style="color: #808080">Cel: 3005069812</p>
-                
+
                </div>
            </div>
         </td>
-        
+
       </tr>
-      
+
     </tbody>
   </table>
         </div>
@@ -168,7 +168,7 @@ Specifies that a  element should render in one solid color (noshaded), instead o
         <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
-         
+
         <td style="color: #FBB829">Apellidos:</td>
         <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
@@ -265,11 +265,11 @@ Specifies that a  element should render in one solid color (noshaded), instead o
     </div>
     <div class="col-sm-2 tamaño">
         <div class="container" style="background-color: #808080">
-            
+
                 <h4>Novedades</h4>
-        
+
         </div>
-        
+
             <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">First item</a>
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Second item</a>
@@ -283,7 +283,7 @@ Specifies that a  element should render in one solid color (noshaded), instead o
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
             </div>
-    
+
     </div>
     </div>
 
@@ -297,7 +297,7 @@ body {
 }
 
 li{
-    color: #ffffff; 
+    color: #ffffff;
 }
 table[class~="menu1"] td{
         padding : 0.2rem;
@@ -315,3 +315,13 @@ a{
     color: #666666;
 }
 </style>
+<script>
+export default {
+  name:'admin-home',
+  data (){
+    return {
+
+    }
+  }
+}
+</script>

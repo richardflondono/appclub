@@ -1,7 +1,8 @@
 <template>
-    
+
         <div class="col-sm-3 tamaño">
                 <div class="container" style="background-color: #ffffff">
+            <div class="form-group">
                     <table class="table table-borderless menu1">
             <tbody>
             <tr>
@@ -13,7 +14,7 @@
                 <td><input type="text" class="form-control form-control borde" v-model="newUser.fName" placeholder="Agregar"></td>
             </tr>
             <tr>
-                
+
                 <td style="color: #FBB829">Apellidos:</td>
                 <td><input type="text" class="form-control form-control borde" v-model="newUser.lName" placeholder="Agregar"></td>
             </tr>
@@ -56,7 +57,7 @@
                 <td style="color: #FBB829">Celular:</td>
                 <td><input type="text" class="form-control form-control borde" v-model="newUser.phone" placeholder="Agregar"></td>
             </tr>
-            
+
             <tr>
                 <td style="color: #FBB829">Género:</td>
                 <td>
@@ -69,7 +70,7 @@
                 </div>
             </td>
             </tr>
-            
+
             <tr>
                 <td style="color: #FBB829">Alimentación:</td>
                 <td><input type="text" class="form-control form-control borde" v-model="newUser.rAlimenticias" placeholder="Agregar"></td>
@@ -107,7 +108,7 @@
                     </div>
                 </td>
             </tr>
-            
+
             </tbody>
         </table>
         <hr>
@@ -116,6 +117,7 @@
         <h6 style="color: #FBB829">Contrato:</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
                 <button type="button" class="btn btn-warning btn-block">Registrar</button>
+              </div>
                 </div>
             </div>
 </template>
@@ -125,7 +127,7 @@
 
 export default {
      name:'formularioUser',
-     
+
     data(){
         return {
         newUser:{
@@ -153,5 +155,9 @@ export default {
       }
     }
   },
+  methods:{
+
+
+  }
 }
 </script>

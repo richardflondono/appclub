@@ -41,7 +41,7 @@
             </ul>
             <div class="tab-content">
             <div id="menu1" class="container tab-pane active"><br>
-  
+
                         <div id="grid-II">
                             <div>
                             <img src="../assets/team.jpg">
@@ -55,7 +55,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -63,7 +63,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -71,7 +71,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -79,7 +79,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -87,7 +87,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -95,7 +95,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -103,7 +103,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -111,7 +111,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -119,7 +119,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -127,7 +127,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -135,7 +135,7 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         <div>
@@ -143,11 +143,11 @@
                             <h6>Nombre del equipo</h6>
                             <span>Cali, Colombia</span>
                             <p>Elite 2<br>95 Miembros</p>
-                            
+
                         </div>
 
                         </div>
-                
+
                 </div>
             <div id="menu2" class="container tab-pane"><br>
             <h3>Menu 1</h3>
@@ -159,7 +159,7 @@
             </div>
             </div>
         </div><!-- Segunda col -->
-    
+
     <div class="column-3"><!-- Tercera col -->
 
         Coordinador:
@@ -173,7 +173,7 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
     <h6 style="color: #FBB829">Legado:</h6>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-  
+
   <h6 style="color: #FBB829">Enrolamiento:</h6>
 
   <ul>
@@ -183,17 +183,17 @@
       <li style="color: #000000">68 Angeles activos</li>
   </ul>
 
-  
+
   <h6 style="color: #FBB829">Salto cuantico:</h6>
   <p>10 Bailarinas</p>
 
         </div><!-- Tercera col -->
 
     <div class="column-4"><!-- Cuarta col -->
-            
+
                 <h4>Novedades</h4>
-        
-        
+
+
             <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">First item</a>
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Second item</a>
@@ -207,7 +207,7 @@
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
             <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
             </div>
-    
+
     </div><!-- Cuarta col -->
 
     <!-- Única fila -->
@@ -358,3 +358,99 @@ body {
     border: 1px solid #1A1A1A;
 }
 </style>
+<script>
+import {database} from './firebaseInit'
+import formularioUser from './FormularioUser'
+//import userDB from './userBD'
+let userRef = database.ref('user/')
+
+export default {
+  name:'dashboard',
+  firebase:{
+    usuarios: userRef
+  },
+  data(){
+    return {
+      users: [],
+      newUser:{
+        fName:'' ,
+        lName:'' ,
+        nickname:'' ,
+        date:'' ,
+        phone:'' ,
+        document:'' ,
+        gender:'' ,
+        addres:'' ,
+        city:'' ,
+        country:'' ,
+        email:'' ,
+        password:'' ,
+        rol:'' ,
+        profesion:'' ,
+        description:'' ,
+        rAlimenticias:'' ,
+        cEspeciales:'' ,
+        sCuantico:'' ,
+        angel:'' ,
+        estatus:'' ,
+        imageUrl:''
+      }
+    }
+  },
+  methods:{
+    agregarUsuario() {
+      //console.log(this.newUser);
+      userRef.push(this.newUser);
+      this.fName='' ,
+      this.lName='' ,
+      this.nickname='' ,
+      this.date='' ,
+      this.phone='' ,
+      this.document='' ,
+      this.gender='' ,
+      this.addres='' ,
+      this.city='' ,
+      this.country='' ,
+      this.email='' ,
+      this.password='' ,
+      this.rol='' ,
+      this.profesion='' ,
+      this.description='' ,
+      this.rAlimenticias='' ,
+      this.cEspeciales='' ,
+      this.sCuantico='' ,
+      this.angel='' ,
+      this.estatus='' ,
+      this.imageUrl=''
+
+    }
+  },
+
+  components:{
+    formularioUser
+  },
+
+  created(){
+      console.log('antes de ');
+    var starCountRef = database.ref('user/');
+    starCountRef.once('value', function(snapshot) {
+     // console.log(snapshot.val());
+
+      snapshot.forEach( function ( childSnapshot ) {
+        const data ={
+          'fName': childSnapshot.val().fName,
+          'lName': childSnapshot.val().lName,
+          'telefono': childSnapshot.val().telefono,
+          'cedula': childSnapshot.val().cedula
+        }
+        //console.log(childSnapshot.val());
+      //  this.users.push(data)
+     // console.log(this.users[0]);
+      })
+    });
+   // console.log(starCountRef)
+  }
+}
+
+
+</script>
