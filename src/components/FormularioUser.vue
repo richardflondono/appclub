@@ -1,6 +1,6 @@
 <template>
 
-        <div class="col-sm-3 tamaño">
+        <div class="col-sm-12 tamaño">
                 <div class="container" style="background-color: #ffffff">
             <div class="form-group">
                     <table class="table table-borderless menu1">
@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td style="color: #FBB829">E-mail:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.email" placeholder="Agregar"></td>
+                <td><input type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" class="form-control form-control borde" v-model="newUser.email" placeholder="Agregar"></td>
             </tr>
             <tr>
                 <td style="color: #FBB829">Cédula:</td>
@@ -151,13 +151,15 @@ export default {
             sCuantico:'' ,
             angel:'' ,
             estatus:'' ,
-            imageUrl:''
+            imageUrl:'',
+            contrato:''
       }
     }
   },
   methods:{
-
-
+    emitirEventoFormularioUser(){
+        this.$emit('formularioUser:change')
+    }
   }
 }
 </script>

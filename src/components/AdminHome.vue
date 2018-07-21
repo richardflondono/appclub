@@ -18,7 +18,7 @@
             <br>
             <br>
             <ul>
-                <li>Estadisticas</li>
+                <li>{{principal}}</li>
                 <li>Socios</li>
                 <li>Empresas</li>
                 <li>Entrenadores</li>
@@ -155,118 +155,17 @@ Specifies that a  element should render in one solid color (noshaded), instead o
   </table>
         </div>
     </div>
-    <div class="col-sm-3 tamaño">
-        <div class="container" style="background-color: #ffffff">
-            <table class="table table-borderless menu1">
-    <tbody>
-      <tr>
-        <td style="color: #FBB829">Foto de Perfil:</td>
-        <td> <input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-         <td style="color: #FBB829">Nombre:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-
-        <td style="color: #FBB829">Apellidos:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Escarapela:</td>
-        <td><input type="text" id="" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">E-mail:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Cédula:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Dirección:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">País:</td>
-        <td><div class="form-group">
-        <select class="form-control borde" id="sel1">
-            <option>Elegir</option>
-            <option>Colombia</option>
-        </select>
-        </div></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Ciudad:</td>
-        <td><div class="form-group">
-        <select class="form-control borde" id="sel1">
-            <option>Elegir</option>
-            <option>Cali</option>
-            <option>Bogota</option>
-        </select>
-        </div></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Celular:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Otro Número:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Género:</td>
-        <td>
-            <div class="form-group">
-        <select class="form-control borde" id="sel1">
-            <option>Elegir</option>
-            <option>Masculino</option>
-            <option>Femenino</option>
-        </select>
-        </div>
-    </td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Fecha:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar(dd/mm/aaaa)"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Alimentación:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-        <td style="color: #FBB829">Cuidados:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-    </tbody>
-  </table>
-  <p>Lorem ipsum dolor sit amet, co nsectetuer adipiscing elit, minim veniam</p>
-  <table class="table table-borderless menu1">
-    <tbody>
-      <tr>
-        <td style="color: #FBB829">Ángel:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-      <tr>
-         <td style="color: #FBB829">Salto Cuántico:</td>
-        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
-      </tr>
-
-    </tbody>
-  </table>
-  <hr>
-  <h6 style="color: #FBB829">Estado de Registro</h6>
-  <input type="text" class="form-control form-control borde" placeholder="Agregar"><hr>
-  <h6 style="color: #FBB829">Contrato:</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
+    <div class="col-sm-3 tamaño" id="inscripcion">
+        <div class="container" id="label-formulario" style="background-color: #ffffff">
+    
+      <formularioUser></formularioUser>
         <button type="button" class="btn btn-warning btn-block">Registrar</button>
         </div>
     </div>
     <div class="col-sm-2 tamaño">
         <div class="container" style="background-color: #808080">
 
-                <h4>Novedades</h4>
+            <h4>Novedades</h4>
 
         </div>
 
@@ -314,14 +213,105 @@ select[class~="borde"]{
 a{
     color: #666666;
 }
+#inscripcion{
+    overflow-y: scroll;
+    height: 850px;
+}
+#label-formulario{
+    padding: 50px 0px;
+}
 </style>
+
 <script>
+import formularioUser from'./FormularioUser'
+import firebase from 'firebase';
+import {database} from './firebaseInit'
+let userRef = database.ref('user/')
+
 export default {
-  name:'admin-home',
-  data (){
-    return {
+    name:'admin-home',
+    data (){
+        return {
+            currentUser:false,
+            principal:'',
+            loggedUser:{
+                fName:'' ,
+                lName:'' ,
+                nickname:'' ,
+                date:'' ,
+                phone:'' ,
+                document:'' ,
+                gender:'' ,
+                addres:'' ,
+                city:'' ,
+                country:'' ,
+                email:'' ,
+                password:'' ,
+                rol:'' ,
+                profesion:'' ,
+                description:'' ,
+                rAlimenticias:'' ,
+                cEspeciales:'' ,
+                sCuantico:'' ,
+                angel:'' ,
+                estatus:'' ,
+                imageUrl:'',
+                contrato:''
+            } 
+        }
+    },
+    methods:{
+        escucharFormularioUser (){
+        console.log('mensaje de formularioUser recibido')
+        }
+    },
+    components:{
+        formularioUser
+    },
+    created(){
+  
+
+    var este = this;
+    if(firebase.auth().currentUser){
+    console.log(' priemro');
+        this.currentUser = firebase.auth().currentUser.email;
+    console.log(' segundo ');
+        userRef.orderByChild("email").equalTo(this.currentUser).on("child_added",gotData);
+    console.log(' tercero ');
+        function gotData (snapshot) {
+    console.log(' cuarto ',snapshot.val().fName);
+            este.loggedUser = snapshot.val();
+    console.log(' quinto ',este.loggedUser);
+        }
+
 
     }
-  }
 }
+}
+/*
+//TRAE UN ARREGLO CON TODOS LOS USUARIOS
+  created(){
+      console.log('antes de ');
+   // var usuariosRef = database.ref('user/');
+    userRef.once('value', function(snapshot) {
+     // console.log(snapshot.val());
+
+      snapshot.forEach( function ( childSnapshot ) {
+        const data ={
+          'fName': childSnapshot.val().fName,
+          'lName': childSnapshot.val().lName,
+          'telefono': childSnapshot.val().telefono,
+          'cedula': childSnapshot.val().cedula
+        }
+        console.log(childSnapshot.val());
+      //  this.users.push(data)
+     // console.log(this.users[0]);
+      })
+    });
+   // console.log(starCountRef)
+  }
+}*/
+
+
+
 </script>

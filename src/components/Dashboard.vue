@@ -51,7 +51,8 @@ export default {
         sCuantico:'' ,
         angel:'' ,
         estatus:'' ,
-        imageUrl:''
+        imageUrl:'',
+        contrato:''
       } 
     }
   },
@@ -79,7 +80,8 @@ export default {
       this.sCuantico='' ,
       this.angel='' ,
       this.estatus='' ,
-      this.imageUrl=''
+      this.imageUrl='',
+      this.contrato=''
       
     }
   },
@@ -90,8 +92,8 @@ export default {
 
   created(){    
       console.log('antes de ');
-    var starCountRef = database.ref('user/');
-    starCountRef.once('value', function(snapshot) {
+    var usuariosRef = database.ref('user/');
+    usuariosRef.once('value', function(snapshot) {
      // console.log(snapshot.val());
 
       snapshot.forEach( function ( childSnapshot ) {
@@ -101,7 +103,7 @@ export default {
           'telefono': childSnapshot.val().telefono,
           'cedula': childSnapshot.val().cedula
         }
-        //console.log(childSnapshot.val());
+        console.log(childSnapshot.val());
       //  this.users.push(data)
      // console.log(this.users[0]);
       })
