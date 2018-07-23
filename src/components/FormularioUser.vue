@@ -7,9 +7,18 @@
             <tbody>
             <tr>
                 <td style="color: #FBB829">Foto de Perfil:</td>
-                <td> <input type="file" class="form-control-file" placeholder="Subir"></td>
+                <td> 
+                    <button raised class="btn" @click="onPickFile"> Upload Image </button>
+                    <input
+                    type="file"
+                    class="form-control-file"
+                    style="display: none"
+                    ref="fileInput"
+                    accept="image/*"
+                    @change="onFilePicked"></td>
             </tr>
             <tr>
+                
                 <td style="color: #FBB829">Nombre:</td>
                 <td><input type="text" class="form-control form-control borde" v-model="newUser.fName" placeholder="Agregar"></td>
             </tr>
@@ -152,14 +161,47 @@ export default {
             angel:'' ,
             estatus:'' ,
             imageUrl:'',
-            contrato:''
+            contrato:'',
+            image: null
       }
     }
   },
   methods:{
     emitirEventoFormularioUser(){
         this.$emit('formularioUser:change')
+    },
+    createUser(){
+        if(!this.formIsValid){
+            
+        }
+    },
+    onPickFile(){
+        this.$refs.fileInput.click()
+    },
+    onFilePicked(event){
+        const files = event.target.files
+        let filename = files[0].name;
+        if (filename.lastIndexOf('.') <= 0){
+            return alert('Please add a valid file')
+        }
+        const fileReader = new FileReader()
+        fileReader.addEventListener('load', () => {
+            this.imageUrl = fileReader.result
+            console.log(this.imageUrl)
+        })
+        fileReader.readAsDataURL(files[0])
+        this.image = files[0]
     }
   }
 }
 </script>
+
+<style>
+.btn {
+    background: #FBB829;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1A1A
+}
+</style>
+
