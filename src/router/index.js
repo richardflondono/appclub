@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Dashboard from '@/components/Dashboard'
-import NewUser from '@/components/NewUser'
+import ComunidadHome from '@/components/ComunidadHome'
+import NegociosHome from '@/components/NegociosHome'
 import ViewUser from '@/components/ViewUser'
 import EditUser from '@/components/EditUser'
 import AdminHome from '@/components/AdminHome'
@@ -33,6 +33,22 @@ Vue.use(Router)
       path: '/admin',
       name: 'admin-home',
       component: AdminHome,
+      meta: {
+          requiresAuth: true
+          }
+    },
+    {
+      path: '/comunidad',
+      name: 'comunidad-home',
+      component: ComunidadHome,
+      meta: {
+          requiresAuth: true
+          }
+    },
+    {
+      path: '/negocios',
+      name: 'negocios-home',
+      component: NegociosHome,
       meta: {
           requiresAuth: true
           }
