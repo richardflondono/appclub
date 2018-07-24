@@ -13,16 +13,58 @@
               <span class="border-navbar">Comunidad</span>
               <span id="last-nav-border">Negocios</span>
             </div>
-            <div v-if="isLoggedIn" class="col-sm-8 contenedor-info-navbar">
+            <div v-if="isLoggedIn" class="col-sm-7 contenedor-info-navbar">
               <div class="row">
+              <div class="col-sm-6">
               <form>
                 <input type="text" name="buscar" placeholder="Buscar.." style=" height: 30px; width: 250px; color: white; background: #6b6b6b;border-radius:  30px;padding:  0 0 0 15px;">
               </form>
               </div>
+              <div class="col-sm-6">
+                <div class="row">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ciudad
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Prom
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Personas
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+              </div>
+              </div>
+              </div>
+              </div>
             </div>
-            <div class="col-sm-2">
+            <div v-if="isLoggedIn" class="col-sm-3">
+              <button v-if="isLoggedIn" class="btn este" >Home</button>
+              <button v-if="isLoggedIn" class="btn este" >Comunidad</button>
+              <button v-if="isLoggedIn" class="btn este" >Negocios</button>
+              <button v-if="isLoggedIn" class="btn este" >Mi Perfil</button>
               <button v-if="isLoggedIn" class="btn este" v-on:click="logout">Salir</button>
             </div>
+            
           </div>
         </div>
     </div>
@@ -30,6 +72,9 @@
 
 </template>
 <style>
+dropdown{
+  float :initial;
+}
 img  {
   width: 40%;
 }
@@ -45,8 +90,9 @@ img  {
 }
 .este {
     background: #FBB829;
-    font-size: 16px;
+    font-size: 11px;
     font-weight: 800;
+    width: 15%;
     color: #1A1A1A;
     float: right;
     margin-top: 10px;
