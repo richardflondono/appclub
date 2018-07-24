@@ -14,11 +14,11 @@
               <span id="last-nav-border">Negocios</span>
             </div>
             <div v-if="isLoggedIn" class="col-sm-8 contenedor-info-navbar">
-              <span class="border-navbar">numerbe 2 head band</span>
-              <span class="border-navbar">numerbe 2 head band</span>
-              <span class="border-navbar">numerbe 2 head band</span>
-              <span class="border-navbar">numerbe 2 head band</span>
-              <span id="last-nav-border">numerbe 2 head band</span>
+              <div class="row">
+              <form>
+                <input type="text" name="buscar" placeholder="Buscar.." style=" height: 30px; width: 250px; color: white; background: #6b6b6b;border-radius:  30px;padding:  0 0 0 15px;">
+              </form>
+              </div>
             </div>
             <div class="col-sm-2">
               <button v-if="isLoggedIn" class="btn este" v-on:click="logout">Salir</button>
