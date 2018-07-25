@@ -7,6 +7,7 @@ import EditUser from '@/components/EditUser'
 import AdminHome from '@/components/AdminHome'
 import LoginUser from '@/components/AppLogin'
 import UserHome from '@/components/UserHome'
+import PerfilHome from '@/components/PerfilHome'
 import firebase from 'firebase'
 
 Vue.use(Router)
@@ -27,6 +28,14 @@ Vue.use(Router)
       component: LoginUser,
       meta: {
       requiresGuest: true
+      }
+    },
+    {
+      path: '/perfil',
+      name: 'perfil',
+      component: PerfilHome,
+      meta: {
+      requiresAuth: true
       }
     },
     {
