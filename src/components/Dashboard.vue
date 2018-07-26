@@ -90,7 +90,7 @@ export default {
     formularioUser
   },
 
-  created(){    
+  created(){
       console.log('antes de ');
     var usuariosRef = database.ref('user/');
     usuariosRef.once('value', function(snapshot) {

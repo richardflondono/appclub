@@ -43,9 +43,9 @@ Vue.use(Router)
       name: 'admin-home',
       component: AdminHome,
       meta: {
-          requiresAuth: true
-          }
-    },
+        requiresAuth: true
+      }
+     },
     {
       path: '/comunidad',
       name: 'comunidad-home',

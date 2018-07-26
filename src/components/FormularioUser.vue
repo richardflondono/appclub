@@ -1,5 +1,5 @@
 <template>
-
+    <form @submit.prevent="agregarUsuario">
         <div class="col-sm-12 tamaño">
                 <div class="container" style="background-color: #ffffff">
             <div class="form-group">
@@ -8,7 +8,7 @@
             <tr>
                 <td style="color: #FBB829">Foto de Perfil:</td>
                 <td> 
-                    <button raised class="btn" @click="onPickFile"> Upload Image </button>
+                    <button raised class="btn" @click="onPickFile"> Cargar Imagen </button>
                     <input
                     type="file"
                     class="form-control-file"
@@ -33,15 +33,11 @@
             </tr>
             <tr>
                 <td style="color: #FBB829">E-mail:</td>
-                <td><input type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" class="form-control form-control borde" v-model="newUser.email" placeholder="Agregar"></td>
+                <td><input type="email"  class="form-control form-control borde" v-model="newUser.email" placeholder="Agregar"></td>
             </tr>
             <tr>
                 <td style="color: #FBB829">Cédula:</td>
                 <td><input type="text" class="form-control form-control borde" v-model="newUser.document" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">Dirección:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.addres" placeholder="Agregar"></td>
             </tr>
             <tr>
                 <td style="color: #FBB829">País:</td>
@@ -71,13 +67,13 @@
                 <td style="color: #FBB829">Género:</td>
                 <td>
                     <div class="form-group">
-                <select class="form-control borde" v-model="newUser.gender" id="sel1">
-                    <option>Elegir</option>
-                    <option>Masculino</option>
-                    <option>Femenino</option>
-                </select>
-                </div>
-            </td>
+                        <select class="form-control borde" v-model="newUser.gender" id="sel1">
+                        <option>Elegir</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        </select>
+                    </div>
+                </td>
             </tr>
 
             <tr>
@@ -88,25 +84,13 @@
                 <td style="color: #FBB829">Cuidados:</td>
                 <td><input type="text" class="form-control form-control borde" v-model="newUser.cEspeciales" placeholder="Agregar"></td>
             </tr>
-            </tbody>
-        </table>
-        <p>Lorem ipsum dolor sit amet, co nsectetuer adipiscing elit, minim veniam</p>
-        <table class="table table-borderless menu1">
-            <tbody>
             <tr>
                 <td style="color: #FBB829">Ángel:</td>
                 <td><input type="text" class="form-control form-control borde" v-model="newUser.angel" placeholder="Agregar"></td>
             </tr>
+            
             <tr>
-                <td style="color: #FBB829">Salto Cuántico:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.sCuantico" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">profesión:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.sCuantico" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">rol:</td>
+                <td style="color: #FBB829">Rol:</td>
                 <td>
                     <div class="form-group">
                     <select class="form-control borde" v-model="newUser.rol" id="sel1">
@@ -122,51 +106,93 @@
         </table>
         <hr>
         <h6 style="color: #FBB829">Estado de Registro</h6>
-        <input type="text" class="form-control form-control borde" v-model="newUser.estatus" placeholder="Agregar"><hr>
-        <h6 style="color: #FBB829">Contrato:</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-                <button type="button" class="btn btn-warning btn-block">Registrar</button>
-              </div>
-                </div>
+        <input type="text" class="form-control form-control borde" v-model="newUser.estatus" placeholder="Agregar">
+        <hr>
+            
+            <button type="submit" class="btn btn-warning btn-block">Registrar</button>
             </div>
+        </div>
+    </div>
+</form>
 </template>
 
 
 <script>
+import {database} from './firebaseInit'
+//import userDB from './userBD'
+let userRef = database.ref('user/')
+import firebase from 'firebase'
 
 export default {
-     name:'formularioUser',
-
+    name:'formularioUser',
+    firebase:{
+        usuarios: userRef
+    },
     data(){
         return {
-        newUser:{
-            fName:'' ,
-            lName:'' ,
-            nickname:'' ,
-            date:'' ,
-            phone:'' ,
-            document:'' ,
-            gender:'' ,
-            addres:'' ,
-            city:'' ,
-            country:'' ,
-            email:'' ,
-            password:'' ,
-            rol:'' ,
-            profesion:'' ,
-            description:'' ,
-            rAlimenticias:'' ,
-            cEspeciales:'' ,
-            sCuantico:'' ,
-            angel:'' ,
-            estatus:'' ,
-            imageUrl:'',
-            contrato:'',
-            image: null
-      }
+            newUser:{
+                fName:'' ,
+                lName:'' ,
+                nickname:'' ,
+                date:'' ,
+                phone:'' ,
+                document:'' ,
+                gender:'' ,
+                addres:'' ,
+                city:'' ,
+                country:'' ,
+                email:'' ,
+                password:'' ,
+                rol:'' ,
+                profesion:'' ,
+                description:'' ,
+                rAlimenticias:'' ,
+                cEspeciales:'' ,
+                sCuantico:'' ,
+                angel:'' ,
+                estatus:'' ,
+                imageUrl:'',
+                contrato:'',
+                image: null
+            },
     }
   },
   methods:{
+    agregarUsuario() {
+      console.log(this.newUser);
+      console.log(this.newUser.email);
+      console.log(this.newUser.password);
+      this.newUser.password = this.newUser.document;
+        firebase.auth().createUserWithEmailAndPassword(this.newUser.email, this.newUser.password)
+        .then(user => {
+            alert('usuario creado correctamente')
+        
+      console.log(this.newUser);
+      userRef.push(this.newUser);
+      this.newUser.fName='' ,
+      this.newUser.lName='' ,
+      this.newUser.nickname='' ,
+      this.newUser.date='' ,
+      this.newUser.phone='' ,
+      this.newUser.document='' ,
+      this.newUser.gender='' ,
+      this.newUser.addres='' ,
+      this.newUser.city='' ,
+      this.newUser.country='' ,
+      this.newUser.email='' ,
+      this.newUser.password='' ,
+      this.newUser.rol='' ,
+      this.newUser.profesion='' ,
+      this.newUser.description='' ,
+      this.newUser.rAlimenticias='' ,
+      this.newUser.cEspeciales='' ,
+      this.newUser.sCuantico='' ,
+      this.newUser.angel='' ,
+      this.newUser.estatus='' ,
+      this.newUser.imageUrl='',
+      this.newUser.contrato=''
+      })
+    },
     emitirEventoFormularioUser(){
         this.$emit('formularioUser:change')
     },

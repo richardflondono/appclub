@@ -316,40 +316,66 @@
         </div><!-- Segunda col -->
 
     <div class="column-3"><!-- Tercera col -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Cronograma<!--/Cap--></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Equipos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu3">Talleres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu4">Financiero</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu5">Actividades</a>
+            </li>
+        </ul>
+    
+      <formularioUser></formularioUser>
+
+
+
+
+
     <table class="table table-borderless">
         <tbody>
             <tr>
-        <td><h6>Coordinador:</h6></td>
-        <td><a href="">Andres Salazar</a></td>
-        </tr>
-        <tr>
-        <td><h6>Capitán:</h6></td>
-        <td><a href="">Felipe Hernandez</a></td>
-        </tr>
-        <tr>
-        <td><h6>Estado:</h6></td>
-        <td><a href="">Maestria Nvl 1</a></td>
-        </tr>
-        <tr><td>
-  <h6 >Visión:</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-        </td>
-        </tr>
-        <tr><td>
-    <h6>Legado:</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-        </td>
-        </tr>
-        <tr><td>
-  <h6 style="color: #FBB829">Enrolamiento:</h6>
+               <td><h6>Coordinador:</h6></td>
+                <td><a href="">Andres Salazar</a></td>
+            </tr>
+            <tr>
+                <td><h6>Capitán:</h6></td>
+                <td><a href="">Felipe Hernandez</a></td>
+            </tr>
+            <tr>
+                <td><h6>Estado:</h6></td>
+                <td><a href="">Maestria Nvl 1</a></td>
+            </tr>
+            <tr>
+                <td>
+                <h6 >Visión:</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
+                </td>
+            </tr>
+            <tr><td>
+                <h6>Legado:</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
+                </td>
+            </tr>
+            <tr><td>
+                <h6 style="color: #FBB829">Enrolamiento:</h6>
 
-  <ul>
-      <li style="color: #000000">320 Vidas impactadas</li>
-      <li style="color: #000000">7 Vuelos</li>
-      <li style="color: #000000">250 Elevaciones</li>
-      <li style="color: #000000">68 Angeles activos</li>
-  </ul>
-</td></tr>
+                <ul>
+                    <li style="color: #000000">320 Vidas impactadas</li>
+                    <li style="color: #000000">7 Vuelos</li>
+                    <li style="color: #000000">250 Elevaciones</li>
+                    <li style="color: #000000">68 Angeles activos</li>
+                </ul>
+                </td>
+            </tr>
     <tr><td>
   <h6 style="color: #FBB829">Salto cuantico:</h6>
   <p>10 Bailarinas</p>
@@ -542,4 +568,126 @@ body {
 }
 
 </style>
+
 <script>
+import formularioUser from'./FormularioUser'
+import {database} from './firebaseInit'
+//import userDB from './userBD'
+let userRef = database.ref('user/')
+
+export default {
+    name:'admin-home',
+
+    firebase:{
+        usuarios: userRef
+    },
+    data(){
+        return {
+        newUser:{
+            fName:'' ,
+            lName:'' ,
+            nickname:'' ,
+            date:'' ,
+            phone:'' ,
+            document:'' ,
+            gender:'' ,
+            addres:'' ,
+            city:'' ,
+            country:'' ,
+            email:'' ,
+            password:'' ,
+            rol:'' ,
+            profesion:'' ,
+            description:'' ,
+            rAlimenticias:'' ,
+            cEspeciales:'' ,
+            sCuantico:'' ,
+            angel:'' ,
+            estatus:'' ,
+            imageUrl:'',
+            contrato:'',
+            image: null
+      },
+      loggedUser:''
+    }
+  },
+  methods:{
+    agregarUsuario() {
+      console.log("sad");
+      console.log('holi');
+      //userRef.push(this.newUser);
+            this.fName='' ,
+            this.lName='' ,
+            this.nickname='' ,
+            this.date='' ,
+            this.phone='' ,
+            this.document='' ,
+            this.gender='' ,
+            this.addres='' ,
+            this.city='' ,
+            this.country='' ,
+            this.email='' ,
+            this.password='' ,
+            this.rol='' ,
+            this.profesion='' ,
+            this.description='' ,
+            this.rAlimenticias='' ,
+            this.cEspeciales='' ,
+            this.sCuantico='' ,
+            this.angel='' ,
+            this.estatus='' ,
+            this.imageUrl='',
+            this.contrato='',
+            this.image= null
+      
+    },
+    emitirEventoFormularioUser(){
+        this.$emit('formularioUser:change')
+    },
+    createUser(){
+        if(!this.formIsValid){
+            
+        }
+    },
+    onPickFile(){
+        this.$refs.fileInput.click()
+    },
+    onFilePicked(event){
+        const files = event.target.files
+        let filename = files[0].name;
+        if (filename.lastIndexOf('.') <= 0){
+            return alert('Please add a valid file')
+        }
+        const fileReader = new FileReader()
+        fileReader.addEventListener('load', () => {
+            this.imageUrl = fileReader.result
+            console.log(this.imageUrl)
+        })
+        fileReader.readAsDataURL(files[0])
+        this.image = files[0]
+    },
+
+    created(){
+  
+
+    var este = this;
+        if(firebase.auth().currentUser){
+            console.log(' priemro');
+            this.currentUser = firebase.auth().currentUser.email;
+            console.log(' segundo ');
+
+            userRef.orderByChild("email").equalTo(this.currentUser).on("child_added",gotData);
+            console.log(' tercero ');
+            function gotData (snapshot) {
+                console.log(' cuarto ',snapshot.val().fName);
+                este.loggedUser = snapshot.val();
+                console.log(' quinto ',este.loggedUser);
+                }
+        }
+    }
+  },
+  components:{
+    formularioUser
+  },
+}
+</script>

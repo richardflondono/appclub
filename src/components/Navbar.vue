@@ -58,11 +58,19 @@
               </div>
             </div>
             <div v-if="isLoggedIn" class="col-sm-3">
-              <button v-if="isLoggedIn" class="btn este" >Home</button>
-              <button v-if="isLoggedIn" class="btn este" >Comunidad</button>
-              <button v-if="isLoggedIn" class="btn este" >Negocios</button>
-              <button v-if="isLoggedIn" class="btn este" >Mi Perfil</button>
               <button v-if="isLoggedIn" class="btn este" v-on:click="logout">Salir</button>
+              <router-link to="/perfil"> 
+                <button v-if="isLoggedIn" class="btn este" >Mi Perfil</button>
+              </router-link>
+              <router-link to="/negocios"> 
+                <button v-if="isLoggedIn" class="btn este" >Negocios</button>
+              </router-link>
+              <router-link to="/comunidad"> 
+                <button v-if="isLoggedIn" class="btn este" >Comunidad</button>
+              </router-link>
+              <a href="/">
+                <button v-if="isLoggedIn" class="btn este" >Home</button>
+              </a>
             </div>
             
           </div>

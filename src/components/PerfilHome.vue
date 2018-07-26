@@ -39,19 +39,16 @@
     <div class="column-2"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Cronograma<!--/Cap--></a>
+            <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Biografia<!--/Cap--></a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Equipos</a>
+            <a class="nav-link" data-toggle="tab" href="#menu2">Logros</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu3">Talleres</a>
+            <a class="nav-link" data-toggle="tab" href="#menu3">Portafolio</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu4">Financiero</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu5">Actividades</a>
+            <a class="nav-link" data-toggle="tab" href="#menu4">Empresas</a>
             </li>
             </ul>
             <div class="tab-content">
@@ -189,137 +186,123 @@
                         <h3>Crear Nuevo</h3>
                           <div class="col-sm-12 tamaño">
                             <div class="container" style="background-color: #ffffff">
-                            <div class="row">
-                            <div class="col-sm-4">
-                                <div class="container" style="background-color: #000000">
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="container" style="background-color: #000000">
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
 
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h5 style="color: #FBB829">N0MBRE DEL EQUIPO</h5>
+                                        <h6>Cali Colombia</h6>
+                                        <h6>Elite #</h6>
+                                        <p>Vision:</p>
+                                        <p>Not supported in HTML5. Specifies that a  element should render in one solid color (noshaded), instead of a shaded color</p>
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                            <tr>
+                                                <td style="color: #FBB829">Coordinador:</td>
+                                                <td>July</td>
+                                                <td>july@example.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #FBB829">Capitan:</td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td style="color: #FBB829">Estado:</td>
+                                                <td>Dooley</td>
+                                                <td>dooley@example.com</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <h5 style="color: #FBB829">N0MBRE DEL EQUIPO</h5>
-                                <h6>Cali Colombia</h6>
-                                <h6>Elite #</h6>
-                                <p>Vision:</p>
-                                <p>Not supported in HTML5. Specifies that a  element should render in one solid color (noshaded), instead of a shaded color</p>
-                    <table class="table table-borderless">
-                        <tbody>
-                        <tr>
-                            <td style="color: #FBB829">Coordinador:</td>
-                            <td>July</td>
-                            <td>july@example.com</td>
-                        </tr>
-                        <tr>
-                            <td style="color: #FBB829">Capitan:</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
-                        </tr>
-                        <tr>
-
-                            <td style="color: #FBB829">Estado:</td>
-                            <td>Dooley</td>
-                            <td>dooley@example.com</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                            </div>
-                            </div>
                             </div>
                             <hr style="border:8px; background:red">
                             <div class="container" style="background-color: #ffffff">
                                 <h4 style="color: #FBB829">10 Miembros registrados</h4><hr>
                                 <table class="table table-borderless">
-                                <tbody>
-                                <tr>
-                                <td>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <div class="container" style="background-color: #000000; padding-right: 20px">
-                                    </div>
-                                </div>
-                                <div class="col-sm-8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <div class="container" style="background-color: #000000; padding-right: 20px">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <h6 style="color: #FBB829">Nombre del usuario</h6>
+                                                        <p>Estado del registro</p>
+                                                        <p  style="color: #808080">Cel: 3005069812</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <div class="container" style="background-color: #000000; padding-right: 20px">
+                                                    </div>0
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h6 style="color: #FBB829">Nombre del usuario</h6>
+                                                    <p>Estado del registro</p>
+                                                    <p  style="color: #808080">Cel: 3005069812</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
 
-                                    <h6 style="color: #FBB829">Nombre del usuario</h6>
-                                    <p>Estado del registro</p>
-                                    <p  style="color: #808080">Cel: 3005069812</p>
-
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <div class="row">
-                                <div class="col-sm-2">
-                                    <div class="container" style="background-color: #000000; padding-right: 20px">
-                                    </div>
-                                </div>
-                                <div class="col-sm-8">
-
-                                    <h6 style="color: #FBB829">Nombre del usuario</h6>
-                                    <p>Estado del registro</p>
-                                    <p  style="color: #808080">Cel: 3005069812</p>
-
-                                </div>
-                            </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="row">
-                                <div class="col-sm-2">
-                                    <div class="container" style="background-color: #000000; padding-right: 20px">
-                                    </div>
-                                </div>
-                                <div class="col-sm-8">
-
-                                    <h6 style="color: #FBB829">Nombre del usuario</h6>
-                                    <p>Estado del registro</p>
-                                    <p  style="color: #808080">Cel: 3005069812</p>
-
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <div class="row" >
-                                <div class="col-sm-2">
-                                    <div class="container" style="background-color: #000000; padding-right: 20px">
-                                    </div>
-                                </div>
-                                <div class="col-sm-8">
-
-                                    <h6 style="color: #FBB829">Nombre del usuario</h6>
-                                    <p>Estado del registro</p>
-                                    <p  style="color: #808080">Cel: 3005069812</p>
-
-                                </div>
-                            </div>
-                            </td>
-
-                        </tr>
-
-                        </tbody>
-                    </table>
+                                        <tr>
+                                            <td>
+                                                <div class="row">
+                                                <div class="col-sm-2">
+                                                    <div class="container" style="background-color: #000000; padding-right: 20px">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h6 style="color: #FBB829">Nombre del usuario</h6>
+                                                    <p>Estado del registro</p>
+                                                    <p  style="color: #808080">Cel: 3005069812</p>
+                                                </div>
+                                            </div>
+                                            </td>
+                                            <td>
+                                                <div class="row" >
+                                                    <div class="col-sm-2">
+                                                        <div class="container" style="background-color: #000000; padding-right: 20px">
+                                                        </div>
+                                                    </div>
+                                                <div class="col-sm-8">
+                                                    <h6 style="color: #FBB829">Nombre del usuario</h6>
+                                                    <p>Estado del registro</p>
+                                                    <p  style="color: #808080">Cel: 3005069812</p>
+                                                </div>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                      </div>
                 </div>
             </div>
             <div id="menu3" class="container tab-pane"><br>
-            <h3>Talleres</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <h3>Talleres</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
             <div id="menu4" class="container tab-pane"><br>
-            <h3>Financiero</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu5" class="container tab-pane"><br>
-            <h3>Actividades</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <h3>Financiero</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
             </div>
         </div><!-- Segunda col -->
@@ -533,3 +516,4 @@ body {
 
 </style>
 <script>
+</script>
