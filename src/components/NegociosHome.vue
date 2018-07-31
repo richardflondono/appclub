@@ -1,12 +1,12 @@
 <template>
 
-<div id="wrapper">
+<div id="wrapper-negocios">
     <!-- Única fila -->
 
     
     <userInformation></userInformation><!-- Primer col -->
 
-    <div class="column-2"><!-- Segunda col -->
+    <div class="column-2-negocios"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
             <a class="nav-link active" data-toggle="tab" href="#menu1">Noticias</a>
@@ -29,7 +29,7 @@
             <div class="tab-content">
             <div id="menu1" class="container tab-pane active"><br>
 
-                        <div id="grid-II">
+                        <div id="grid-II-negocios">
                         <div>
                             <div class="card text-center">
                             <div class="card-header">
@@ -217,7 +217,7 @@
             </div>
         </div><!-- Segunda col -->
 
-    <div class="column-3"><!-- Tercera col -->
+    <div class="column-3-negocios"><!-- Tercera col -->
                             <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
                             <div class="card-header">Nombre del servicio</div>
                             <div class="card-body">
@@ -271,7 +271,7 @@ body {
     background: #AAACB2;
 }
 
-#wrapper {
+#wrapper-negocios {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(11, 1fr);
@@ -279,71 +279,15 @@ body {
     padding: 20px 0;
 }
 
-.column-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    background: #4D4D4D;
-    color: #E6E6E6;
-    font-size: 20px;
-}
 
-.column-1 img {
-    margin: 10px auto;
-    width: 70%;
-}
-
-.column-1 p {
-    padding: 0 24px;
-    margin: 10px auto;
-    line-height: 16pt;
-}
-
-.column-1 p em {
-    text-transform: uppercase;
-    color: #FBB829;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.column-1 p strong {
-    font-weight: 700;
-}
-
-.column-1 ul {
-    width: 70%;
-    margin: 20px auto;
-}
-
-.column-1 ul li {
-    margin: 3px auto;
-}
-
-.column-1 span {
-    font: 40px 'Fjalla One', Arial, sans-serif;
-    display: block;
-    color: #1A1A1A;
-    padding: 30px 0;
-    text-transform: uppercase;
-    text-align: center;
-    background: #FBB829;
-}
-
-.column-1 div {
-    display: block;
-    margin: 12px;
-    padding: 10px;
-    border: 1px solid #808080;
-}
-
-.column-2 {
+.column-2-negocios {
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 1;
     background: #FFF;
 }
 
-#grid-II {
+#grid-II-negocios {
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: auto;
@@ -353,56 +297,56 @@ body {
     overflow-y: scroll;
 }
 
-#grid-II > div {
+#grid-II-negocios > div {
     padding: 14px;
     border: 1px solid #797B7F;
 }
 
-#grid-II > div:hover {
+#grid-II-negocios > div:hover {
     background: #AAACB2;
 }
 
-#grid-II > :nth-of-type(4n + 1) {
+#grid-II-negocios > :nth-of-type(4n + 1) {
     grid-column: 1;
     grid-row: auto;
 }
 
-#grid-II > :nth-of-type(4n) {
+#grid-II-negocios > :nth-of-type(4n) {
     grid-column: 4;
     grid-row: auto;
 }
 
-#grid-II > div img {
+#grid-II-negocios > div img {
     border: 1px solid #797B7F;
     width: 50%;
     margin-right: 10px;
     float: left;
 }
 
-#grid-II > div h6 {
+#grid-II-negocios > div h6 {
     color: #FBB829;
     text-transform: uppercase;
     font-size: 20px;
     margin-top: 5px;
 }
 
-#grid-II > div p {
+#grid-II-negocios > div p {
     color: #777;
 }
 
-.column-3 {
+.column-3-negocios {
     grid-column-start: 9;
     grid-column-end: 12;
     grid-row-start: 1;
     background: #FFF;
 }
-.column-3 > table > tbody > tr > td > h6 {
+.column-3-negocios > table > tbody > tr > td > h6 {
     color: #FBB829;
     text-transform: uppercase;
     font-size: 20px;
     margin-top: 5px;
 }
-.column-3 > table > tbody > tr > td > a {
+.column-3-negocios > table > tbody > tr > td > a {
     color: #777;
 }
 
