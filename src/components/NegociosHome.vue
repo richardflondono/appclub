@@ -9,19 +9,25 @@
     <div class="column-2-negocios"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#menu1">Noticias</a>
+            <a class="nav-link active" data-toggle="tab" href="#menu1">Comercio</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Eventos</a>
+            <a class="nav-link" data-toggle="tab" href="#menu2">Cronograma</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu3">Socios</a>
+            <a class="nav-link" data-toggle="tab" href="#menu3">Empresas</a>
             </li>
              <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu4">Beneficios</a>
+            <a class="nav-link" data-toggle="tab" href="#menu4">Starters</a>
             </li>
              <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu5">Mapa</a>
+            <a class="nav-link" data-toggle="tab" href="#menu5">Negocios</a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu6">Beneficios</a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu7">Mapa</a>
             </li>
             </ul>
 
@@ -208,6 +214,18 @@
 
             <!--Contenido Tab Mapa -->
             <div id="menu5" class="container tab-pane"><br>
+            <h3>Menu 5</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+
+            <!--Contenido Tab Mapa -->
+            <div id="menu6" class="container tab-pane"><br>
+            <h3>Menu 5</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+
+            <!--Contenido Tab Mapa -->
+            <div id="menu7" class="container tab-pane"><br>
             <h3>Menu 5</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
