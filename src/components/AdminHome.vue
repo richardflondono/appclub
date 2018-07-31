@@ -617,8 +617,6 @@ export default {
   },
   methods:{
     agregarUsuario() {
-      console.log("sad");
-      console.log('holi');
       //userRef.push(this.newUser);
             this.fName='' ,
             this.lName='' ,

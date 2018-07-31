@@ -3,29 +3,8 @@
 <div id="wrapper">
     <!-- Única fila -->
 
-    <div class="column-1"><!-- Primer col -->
-        <span>Administrador</span>
-
-        <div>
-            <img src="../assets/profile.jpeg">
-
-            <p>
-            <em>Nombre de usuario</em><br><strong>Status</strong><br>Administrador
-            </p>
-
-            <ul>
-                <li>Estadisticas</li>
-                <li>Socios</li>
-                <li>Empresas</li>
-                <li>Entrenadores</li>
-            </ul>
-
-            <ul>
-                <li>Configuracion</li>
-                <li>Seguridad</li>
-            </ul>
-        </div>
-    </div><!-- Primer col -->
+    
+    <userInformation></userInformation><!-- Primer col -->
 
     <div class="column-2"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
@@ -543,3 +522,15 @@ body {
 
 </style>
 <script>
+
+import userInformation from'./usuario/UserInformation'
+
+export default {
+    name:'user-home',
+
+  components:{
+    userInformation
+  }
+   
+}
+</script>

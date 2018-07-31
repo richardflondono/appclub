@@ -68,7 +68,7 @@
               <router-link to="/comunidad"> 
                 <button v-if="isLoggedIn" class="btn este" >Comunidad</button>
               </router-link>
-              <a href="/">
+              <a href="/"> 
                 <button v-if="isLoggedIn" class="btn este" >Home</button>
               </a>
             </div>
