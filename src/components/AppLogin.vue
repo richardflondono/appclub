@@ -14,7 +14,7 @@
                     <input class="input_login" type="password" v-model="password" placeholder="Pín de Elite">
                     <a href="" class="a_appLoggin">Olvide mi contraseña</a>
 
-                    <p style="text-transform: uppercase; border-bottom:1px solid #FFE045;"><span>Ir directo a:</span></p>
+                    <p class="appLogin_p" style="text-transform: uppercase; border-bottom:1px solid #FFE045;"><span>Ir directo a:</span></p>
 
                     <div style="width: 95%;">
 
@@ -53,6 +53,7 @@
 
 body{
     font-family: 'Source Sans Pro', Arial, sans-serif;
+    background: no-repeat url("../assets/pexels-photo-450035.jpeg");
 }
 
 .fondo{
@@ -94,12 +95,12 @@ body{
     color: #1A1A1A
 }
 
-a, a:active, a:visited {
+.a_appLoggin, .a_appLoggin:active, .a_appLoggin:visited {
     font-size: 18px;
     text-decoration: underline;
 }
 
-.a_appLoggin{
+.a_appLoggin {
     font-size: 18px;
     text-decoration: underline;
     color:#FFF;

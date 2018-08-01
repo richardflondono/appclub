@@ -13,7 +13,7 @@
               <span class="border-navbar">Comunidad</span>
               <span id="last-nav-border">Negocios</span>
             </div>
-            <div v-if="isLoggedIn" class="col-sm-7 contenedor-info-navbar">
+            <div v-if="isLoggedIn" class="col-sm-6 contenedor-info-navbar">
               <div class="row">
               <div class="col-sm-6">
               <form>
@@ -57,7 +57,7 @@
               </div>
               </div>
             </div>
-            <div v-if="isLoggedIn" class="col-sm-3">
+            <div v-if="isLoggedIn" class="col-sm-4">
               <button v-if="isLoggedIn" class="btn btn_este" v-on:click="logout"><p>Salir</p></button>
               <router-link to="/perfil"> 
                 <button v-if="isLoggedIn" class="btn btn_este" ><p>Mi Perfil</p></button>
@@ -100,7 +100,7 @@ img  {
     background: #FBB829!important;
     font-size: 11px!important;
     font-weight: 800!important;
-    width: 15%!important;
+    width: auto!important;
     color: #1A1A1A!important;
     float: right!important;
     margin-top: 10px!important;
