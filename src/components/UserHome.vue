@@ -1,12 +1,12 @@
 <template>
 
-<div id="wrapper">
+<div id="wrapper-user">
     <!-- Única fila -->
 
     
     <userInformation></userInformation><!-- Primer col -->
 
-    <div class="column-2"><!-- Segunda col -->
+    <div class="column-2-user"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
             <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Cronograma<!--/Cap--></a>
@@ -46,7 +46,7 @@
                         <h3>Equipos</h3>
                     
                     
-                                <div id="grid-II">
+                                <div id="grid-II-user">
                                     <div>
                                     <img src="../assets/team.jpg">
                                     <h6>Nombre del equipo</h6>
@@ -294,7 +294,7 @@
             </div>
         </div><!-- Segunda col -->
 
-    <div class="column-3"><!-- Tercera col -->
+    <div class="column-3-user"><!-- Tercera col -->
     <table class="table table-borderless">
         <tbody>
             <tr>
@@ -337,7 +337,7 @@
     </table>
         </div><!-- Tercera col -->
 
-    <div class="column-4"><!-- Cuarta col -->
+    <div class="column-4-user"><!-- Cuarta col -->
 
                 <h4>Novedades</h4>
 
@@ -370,78 +370,22 @@ body {
     background: #AAACB2;
 }
 
-#wrapper {
+#wrapper-user {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(11, 1fr);
     grid-gap: 20px;
     padding: 20px 0;
 }
-.column-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    background: #4D4D4D;
-    color: #E6E6E6;
-    font-size: 20px;
-}
 
-.column-1 img {
-    margin: 10px auto;
-    width: 70%;
-}
-
-.column-1 p {
-    padding: 0 24px;
-    margin: 10px auto;
-    line-height: 16pt;
-}
-
-.column-1 p em {
-    text-transform: uppercase;
-    color: #FBB829;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.column-1 p strong {
-    font-weight: 700;
-}
-
-.column-1 ul {
-    width: 70%;
-    margin: 20px auto;
-}
-
-.column-1 ul li {
-    margin: 3px auto;
-}
-
-.column-1 span {
-    font: 40px 'Fjalla One', Arial, sans-serif;
-    display: block;
-    color: #1A1A1A;
-    padding: 30px 0;
-    text-transform: uppercase;
-    text-align: center;
-    background: #FBB829;
-}
-
-.column-1 div {
-    display: block;
-    margin: 12px;
-    padding: 10px;
-    border: 1px solid #808080;
-}
-
-.column-2 {
+.column-2-user {
     grid-column-start: 3;
     grid-column-end: 7;
     grid-row-start: 1;
     background: #FFF;
 }
 
-#grid-II {
+#grid-II-user {
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: auto;
@@ -451,68 +395,66 @@ body {
     overflow-y: scroll;
 }
 
-#grid-II > div {
+#grid-II-user > div {
     padding: 14px;
     border: 1px solid #797B7F;
 }
 
-#grid-II > div:hover {
+#grid-II-user > div:hover {
     background: #AAACB2;
 }
 
-#grid-II > :nth-of-type(2n + 1) {
+#grid-II-user > :nth-of-type(2n + 1) {
     grid-column: 1;
     grid-row: auto;
 }
 
-#grid-II > :nth-of-type(2n) {
+#grid-II-user > :nth-of-type(2n) {
     grid-column: 2;
     grid-row: auto;
 }
 
-#grid-II > div img {
+#grid-II-user > div img {
     border: 1px solid #797B7F;
     width: 50%;
     margin-right: 10px;
     float: left;
 }
 
-#grid-II > div h6 {
+#grid-II-user > div h6 {
     color: #FBB829;
     text-transform: uppercase;
     font-size: 20px;
     margin-top: 5px;
 }
 
-#grid-II > div p {
+#grid-II-user > div p {
     color: #777;
 }
 
-.column-3 {
+.column-3-user {
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 1;
     background: #FFF;
 }
-.column-3 > table > tbody > tr > td > h6 {
+.column-3-user > table > tbody > tr > td > h6 {
     color: #FBB829;
     text-transform: uppercase;
     font-size: 20px;
     margin-top: 5px;
 }
-.column-3 > table > tbody > tr > td > a {
+.column-3-user > table > tbody > tr > td > a {
     color: #777;
 }
 
-.column-4 {
+.column-4-user {
     grid-column-start: 10;
     grid-column-end: 12;
     grid-row-start: 1;
 }
 
-.col-sm {
-    border: 1px solid #1A1A1A;
-}
+
 #sub-menu1{
     padding: 0px;
 }
