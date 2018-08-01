@@ -58,18 +58,18 @@
               </div>
             </div>
             <div v-if="isLoggedIn" class="col-sm-3">
-              <button v-if="isLoggedIn" class="btn este" v-on:click="logout">Salir</button>
+              <button v-if="isLoggedIn" class="btn btn_este" v-on:click="logout"><p>Salir</p></button>
               <router-link to="/perfil"> 
-                <button v-if="isLoggedIn" class="btn este" >Mi Perfil</button>
+                <button v-if="isLoggedIn" class="btn btn_este" ><p>Mi Perfil</p></button>
               </router-link>
               <router-link to="/negocios"> 
-                <button v-if="isLoggedIn" class="btn este" >Negocios</button>
+                <button v-if="isLoggedIn" class="btn btn_este" ><p>Negocios</p></button>
               </router-link>
               <router-link to="/comunidad"> 
-                <button v-if="isLoggedIn" class="btn este" >Comunidad</button>
+                <button v-if="isLoggedIn" class="btn btn_este" ><p>Comunidad</p></button>
               </router-link>
               <a href="/"> 
-                <button v-if="isLoggedIn" class="btn este" >Home</button>
+                <button v-if="isLoggedIn" class="btn btn_este" ><p>Home</p></button>
               </a>
             </div>
             
@@ -96,15 +96,15 @@ img  {
   border-right: 1px solid;
   padding: 0 5px 0 5px;
 }
-.este {
-    background: #FBB829;
-    font-size: 11px;
-    font-weight: 800;
-    width: 15%;
-    color: #1A1A1A;
-    float: right;
-    margin-top: 10px;
-    margin-right: 10px;
+.btn_este {
+    background: #FBB829!important;
+    font-size: 11px!important;
+    font-weight: 800!important;
+    width: 15%!important;
+    color: #1A1A1A!important;
+    float: right!important;
+    margin-top: 10px!important;
+    margin-right: 10px!important;
 }
 </style>
 

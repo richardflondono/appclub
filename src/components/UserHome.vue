@@ -299,15 +299,15 @@
         <tbody>
             <tr>
         <td><h6>Coordinador:</h6></td>
-        <td><a href="">Andres Salazar</a></td>
+        <td><p>Andres Salazar</p></td>
         </tr>
         <tr>
         <td><h6>Capitán:</h6></td>
-        <td><a href="">Felipe Hernandez</a></td>
+        <td><p>Felipe Hernandez</p></td>
         </tr>
         <tr>
         <td><h6>Estado:</h6></td>
-        <td><a href="">Maestria Nvl 1</a></td>
+        <td><p>Maestria Nvl 1</p></td>
         </tr>
         <tr><td>
   <h6 >Visión:</h6>

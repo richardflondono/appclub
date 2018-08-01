@@ -670,20 +670,17 @@ export default {
     }    
   },
   components:{
-    formularioUser,
+    formularioUser, 
     userInformation
   },
     created(){
     var este = this;
-            console.log(' primero ');
         if(firebase.auth().currentUser){
             this.currentUser = firebase.auth().currentUser.email;
 
             userRef.orderByChild("email").equalTo(this.currentUser).on("child_added",gotData);
-            console.log(' tercero ');
             function gotData (snapshot) {
                 este.loggedUser = snapshot.val();
-                console.log(' quinto ',este.loggedUser);
                 }
         }
     }
