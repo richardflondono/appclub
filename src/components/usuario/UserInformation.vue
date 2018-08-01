@@ -21,8 +21,23 @@
                 <li>Seguridad</li>
             </ul>
         </div>
+    <div>
+        <div class="content">
+            <h4 class="center" style="color: #000;">¡Ahora somos más!</h4>
+            <div class="content rounded-circle center">
+                <p>865</p>
+            </div>
+            <h4 class="center" style="color:#000;">Usuarios</h4>
+
+            <p class="center" style="color: #808080">La tercer sociedad más grande de la actualidad, junto a Mazones e Iluminatus.
+                
+            </p>
+            <h4 class="center" style="color: #FBB829;">¡Vamos por el mundo!</h4>
+        </div>
 
     </div>
+
+</div>    
 </template>
 
 <style>
@@ -34,6 +49,11 @@
     background: #4D4D4D;
     color: #E6E6E6;
     font-size: 20px;
+}
+
+.rounded-circle{
+    background-color: #FBB829;
+    color:#1A1A1A;
 }
 
 .column-1 img {
