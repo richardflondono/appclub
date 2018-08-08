@@ -71,7 +71,7 @@
                 <button v-if="isLoggedIn" class="btn btn_este" ><p>Comunidad</p></button>
               </router-link>
               <a href="/"> 
-                <button v-if="isLoggedIn" class="btn btn_este" ><p>Home</p></button>
+                <button v-if="isLoggedIn" class="btn btn_este" id="nav_home" ><p>Home</p></button>
               </a>
             </div>
             
@@ -82,6 +82,9 @@
 
 </template>
 <style>
+#nav_home {
+    background: no-repeat url(/static/img/pexels-photo-450035.ee06817.jpeg);
+    }
 input[type="submit"] {
     font-family: FontAwesome;
 }

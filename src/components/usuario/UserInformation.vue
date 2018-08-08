@@ -1,22 +1,20 @@
 <template>
     <div class="column-1"><!-- Primer col -->
- <span>{{loggedUser.rol}}</span>
+ <!--<span>{{loggedUser.rol}}</span>-->
 
         <div>
             <img src="../../assets/profile.jpeg">
 
-            <p>
-            <em>{{loggedUser.fName}} {{loggedUser.lName}}</em><br><strong>Status</strong><br>Administrador
-            </p>
-
+            <p class="nombre_us">{{loggedUser.fName}} {{loggedUser.lName}}</p>
+            
+            
             <ul>
+                <li><strong>Status</strong></li>
+                <li><strong>{{loggedUser.rol}}</strong></li>
                 <li>Estadisticas</li>
                 <li>Socios</li>
                 <li>Empresas</li>
                 <li>Entrenadores</li>
-            </ul>
-
-            <ul>
                 <li>Configuracion</li>
                 <li>Seguridad</li>
             </ul>
@@ -58,7 +56,7 @@
 
 .column-1 img {
     margin: 10px auto;
-    width: 70%;
+    width: 100%;
 }
 
 .column-1 p {
@@ -67,7 +65,7 @@
     line-height: 16pt;
 }
 
-.column-1 p em {
+.nombre_us {
     text-transform: uppercase;
     color: #FBB829;
     font-weight: 700;
@@ -140,7 +138,8 @@ export default {
             imageUrl:'',
             contrato:'',
             image: null
-      }
+      },
+      registered:''
     }
   },
   methods:{

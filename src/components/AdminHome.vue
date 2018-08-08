@@ -1,6 +1,8 @@
+
 <template>
 
-<div id="wrapper">
+
+<div id="wrapper_admin">
     <!-- Única fila -->
 
     <userInformation></userInformation><!-- Primer col -->
@@ -296,70 +298,69 @@
     <div class="column-3"><!-- Tercera col -->
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Cronograma<!--/Cap--></a>
+                <a class="nav-link active" data-toggle="tab" href="#menu_form">Crear usuario</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu2">Equipos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu3">Talleres</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu4">Financiero</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu5">Actividades</a>
+                <a class="nav-link" data-toggle="tab" href="#menu_form2">Informacion</a>
             </li>
         </ul>
+        
+        
+            <div class="tab-content">
+                <div id="menu_form" class="container tab-pane active"><br>
+                    <h3>Crear usuario</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <formularioUser></formularioUser>
+                
+                </div>
+                <div id="menu_form2" class="container tab-pane "><br>
+                    <h3>Informacion</h3>
+                    
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                            <td><h6>Coordinador:</h6></td>
+                                <td><a href="">Andres Salazar</a></td>
+                            </tr>
+                            <tr>
+                                <td><h6>Capitán:</h6></td>
+                                <td><a href="">Felipe Hernandez</a></td>
+                            </tr>
+                            <tr>
+                                <td><h6>Estado:</h6></td>
+                                <td><a href="">Maestria Nvl 1</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <h6 >Visión:</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
+                                </td>
+                            </tr>
+                            <tr><td>
+                                <h6>Legado:</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
+                                </td>
+                            </tr>
+                            <tr><td>
+                                <h6 style="color: #FBB829">Enrolamiento:</h6>
+
+                                <ul>
+                                    <li style="color: #000000">320 Vidas impactadas</li>
+                                    <li style="color: #000000">7 Vuelos</li>
+                                    <li style="color: #000000">250 Elevaciones</li>
+                                    <li style="color: #000000">68 Angeles activos</li>
+                                </ul>
+                                </td>
+                            </tr>
+                    <tr><td>
+                <h6 style="color: #FBB829">Salto cuantico:</h6>
+                <p>10 Bailarinas</p>
+                </td></tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
     
-      <formularioUser></formularioUser>
-
-
-
-
-
-    <table class="table table-borderless">
-        <tbody>
-            <tr>
-               <td><h6>Coordinador:</h6></td>
-                <td><a href="">Andres Salazar</a></td>
-            </tr>
-            <tr>
-                <td><h6>Capitán:</h6></td>
-                <td><a href="">Felipe Hernandez</a></td>
-            </tr>
-            <tr>
-                <td><h6>Estado:</h6></td>
-                <td><a href="">Maestria Nvl 1</a></td>
-            </tr>
-            <tr>
-                <td>
-                <h6 >Visión:</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-                </td>
-            </tr>
-            <tr><td>
-                <h6>Legado:</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-                </td>
-            </tr>
-            <tr><td>
-                <h6 style="color: #FBB829">Enrolamiento:</h6>
-
-                <ul>
-                    <li style="color: #000000">320 Vidas impactadas</li>
-                    <li style="color: #000000">7 Vuelos</li>
-                    <li style="color: #000000">250 Elevaciones</li>
-                    <li style="color: #000000">68 Angeles activos</li>
-                </ul>
-                </td>
-            </tr>
-    <tr><td>
-  <h6 style="color: #FBB829">Salto cuantico:</h6>
-  <p>10 Bailarinas</p>
-  </td></tr>
-    </tbody>
-    </table>
         </div><!-- Tercera col -->
 
     <div class="column-4"><!-- Cuarta col -->
@@ -395,10 +396,10 @@ body {
     background: #AAACB2;
 }
 
-#wrapper {
+#wrapper_admin {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
     padding: 20px 0;
 }
@@ -461,7 +462,7 @@ body {
 
 .column-2 {
     grid-column-start: 3;
-    grid-column-end: 7;
+    grid-column-end: 8;
     grid-row-start: 1;
     background: #FFF;
 }
@@ -514,8 +515,8 @@ body {
 }
 
 .column-3 {
-    grid-column-start: 7;
-    grid-column-end: 10;
+    grid-column-start: 8;
+    grid-column-end: 11;
     grid-row-start: 1;
     background: #FFF;
 }
@@ -530,8 +531,8 @@ body {
 }
 
 .column-4 {
-    grid-column-start: 10;
-    grid-column-end: 12;
+    grid-column-start: 11;
+    grid-column-end: 13;
     grid-row-start: 1;
 }
 
