@@ -15,11 +15,13 @@
             </div>
             <div v-if="isLoggedIn" class="col-sm-6 contenedor-info-navbar">
               <div class="row">
-              <div class="col-sm-6">
-              <form>
-                <input type="text" name="buscar" placeholder="Buscar.." style=" height: 30px; width: 250px; color: white; background: #6b6b6b;border-radius:  30px;padding:  0 0 0 15px;">
-              </form>
-              </div>
+                <div class="col-sm-6">
+                  <div class="container">
+                    <form>
+                      <input type="submit" class="fa fa-input" value="&#xf002; Buscar..." name="buscar"  style=" height: 30px; width: 250px; color: white; background: #6b6b6b;border-radius:  30px;padding:  0 0 0 15px;">
+                    </form>
+                  </div>
+                </div>
               <div class="col-sm-6">
                 <div class="row">
               <div class="dropdown">
@@ -80,6 +82,9 @@
 
 </template>
 <style>
+input[type="submit"] {
+    font-family: FontAwesome;
+}
 dropdown{
   float :initial;
 }

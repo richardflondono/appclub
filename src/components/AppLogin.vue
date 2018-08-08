@@ -7,11 +7,11 @@
 
                     <p class="appLogin_p">Esta es tu plataforma de transformación, creación y progreso.<br>
                     <span>¿Que meta extraordinario vas a cumplir hoy?</span></p>
-
+                    <form v-on:submit.prevent="noop">
                     <input class="input_login" type="text" v-model="email" placeholder="Codigo de Usuario">
                     <a href="" class="a_appLoggin">Otras formas de ingreso</a>
 
-                    <input class="input_login" type="password" v-model="password" placeholder="Pín de Elite">
+                    <input class="input_login" type="password" v-model="password" v-on:keyup.enter="login" placeholder="Pín de Elite">
                     <a href="" class="a_appLoggin">Olvide mi contraseña</a>
 
                     <p class="appLogin_p" style="text-transform: uppercase; border-bottom:1px solid #FFE045;"><span>Ir directo a:</span></p>
@@ -21,8 +21,9 @@
                     <button type="button" v-on:click="login" class="btn">Inicio</button>
                     <button type="button" v-on:click="login" class="btn">Comunidad</button>
                     <button type="button" v-on:click="login" class="btn">Negocios</button>
-
+                    
                     </div>
+                    </form>
                 </div>
 
                 <div class="my-container text_whitte">

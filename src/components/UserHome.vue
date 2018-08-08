@@ -9,24 +9,19 @@
     <div class="column-2-user"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Cronograma<!--/Cap--></a>
+            <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Mi Viaje<!--/Cap--></a>
             </li>
             <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#menu2">Equipos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu3">Talleres</a>
+            <a class="nav-link" data-toggle="tab" href="#menu3">Cronograma</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu4">Financiero</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu5">Actividades</a>
-            </li>
+           
             </ul>
             <div class="tab-content">
             <div id="menu1" class="container tab-pane active"><br>
-            <h3>Cronograma</h3>
+            <h3>COACHING DIGITAL</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             
             </div>
@@ -283,59 +278,15 @@
             <h3>Talleres</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
-            <div id="menu4" class="container tab-pane"><br>
-            <h3>Financiero</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu5" class="container tab-pane"><br>
-            <h3>Actividades</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
+           
             </div>
         </div><!-- Segunda col -->
 
     <div class="column-3-user"><!-- Tercera col -->
-    <table class="table table-borderless">
-        <tbody>
-            <tr>
-        <td><h6>Coordinador:</h6></td>
-        <td><p>Andres Salazar</p></td>
-        </tr>
-        <tr>
-        <td><h6>Capitán:</h6></td>
-        <td><p>Felipe Hernandez</p></td>
-        </tr>
-        <tr>
-        <td><h6>Estado:</h6></td>
-        <td><p>Maestria Nvl 1</p></td>
-        </tr>
-        <tr><td>
-  <h6 >Visión:</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-        </td>
-        </tr>
-        <tr><td>
-    <h6>Legado:</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-        </td>
-        </tr>
-        <tr><td>
-  <h6 style="color: #FBB829">Enrolamiento:</h6>
-
-  <ul>
-      <li style="color: #000000">320 Vidas impactadas</li>
-      <li style="color: #000000">7 Vuelos</li>
-      <li style="color: #000000">250 Elevaciones</li>
-      <li style="color: #000000">68 Angeles activos</li>
-  </ul>
-</td></tr>
-    <tr><td>
-  <h6 style="color: #FBB829">Salto cuantico:</h6>
-  <p>10 Bailarinas</p>
-  </td></tr>
-    </tbody>
-    </table>
-        </div><!-- Tercera col -->
+        <div class="container block" style="background-color: #1A1A1A;">
+            <h4 style="color:#fff; padding: 10px 0;">Metas y compromisos</h4>    
+        </div>
+    </div><!-- Tercera col -->
 
     <div class="column-4-user"><!-- Cuarta col -->
 
