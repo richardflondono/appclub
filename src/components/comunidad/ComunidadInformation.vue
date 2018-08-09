@@ -4,7 +4,9 @@
 
         <div>
             <img src="../../assets/profile.jpeg">
+
             <p class="nombre_us">{{loggedUser.fName}} {{loggedUser.lName}}</p>
+            
             
             <ul>
                 <li><strong>Status</strong></li>
@@ -17,8 +19,23 @@
                 <li>Seguridad</li>
             </ul>
         </div>
+    <div>
+        <div class="content">
+            <h4 class="center" style="color: #000;">¡Ahora somos más!</h4>
+            <div class="content rounded-circle center">
+                <p>865</p>
+            </div>
+            <h4 class="center" style="color:#000;">Usuarios</h4>
 
-    </div>    
+            <p class="center" style="color: #808080">La tercer sociedad más grande de la actualidad, junto a Mazones e Iluminatus.
+                
+            </p>
+            <h4 class="center" style="color: #FBB829;">¡Vamos por el mundo!</h4>
+        </div>
+
+    </div>
+
+</div>    
 </template>
 
 <style>
@@ -93,7 +110,7 @@ import firebase from 'firebase'
 let userRef = database.ref('user/')
 
 export default {
-    name:'userInformation',
+    name:'ComunidadInformation',
     
     data(){
         return {
@@ -130,15 +147,12 @@ export default {
     },
     created(){
     var este = this;
-            console.log(' primero ');
         if(firebase.auth().currentUser){
             this.currentUser = firebase.auth().currentUser.email;
 
             userRef.orderByChild("email").equalTo(this.currentUser).on("child_added",gotData);
-            console.log(' tercero ');
             function gotData (snapshot) {
                 este.loggedUser = snapshot.val();
-                console.log(' quinto ',este.loggedUser);
                 }
         }
     }

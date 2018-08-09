@@ -4,7 +4,7 @@
     <!-- Única fila -->
 
     
-    <userInformation></userInformation><!-- Primer col -->
+    <comunidadInformation></comunidadInformation><!-- Primer col -->
 
     <div class="column-2-comunidad"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
@@ -360,7 +360,7 @@ body {
 </style>
 <script>
 import {database} from './firebaseInit'
-import userInformation from'./usuario/UserInformation'
+import comunidadInformation from'./comunidad/ComunidadInformation'
 import formularioUser from './FormularioUser'
 //import userDB from './userBD'
 let userRef = database.ref('user/')
@@ -429,7 +429,7 @@ export default {
 
   components:{
     formularioUser,
-    userInformation
+    comunidadInformation
   },
 
   created(){

@@ -303,6 +303,10 @@
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
             </div>
 
     </div><!-- Cuarta col -->
@@ -324,7 +328,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(11, 1fr);
     grid-gap: 20px;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 
 .column-2-user {

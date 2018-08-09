@@ -7,7 +7,7 @@
 
             <div class="row">
             
-            <img style="float: left;width: 5  i{}j0%;margin-right: 10px;border: 1px solid #797B7F;" src="../assets/profile.jpeg">
+            <img id="img_perfil" style="float: left;width: 5  i{}j0%;margin-right: 10px;border: 1px solid #797B7F;" src="../assets/profile.jpeg">
            
             <h6 style="color: #FBB829;text-transform: uppercase;font-size: 20px;">NOMBRE DEL EQUIPO</h6>
             <span>Cali Colombia</span>
@@ -337,6 +337,12 @@ body {
     grid-gap: 20px;
     padding: 20px 0;
 }
+
+#img_perfil {
+    width: 60%;
+    min-height: 150px;
+}
+
 .column-1-perfil {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -434,8 +440,6 @@ body {
     width: 70%;
 }
 
-
-
 .column-3-perfil {
     grid-column-start: 9;
     grid-column-end: 12;
@@ -468,5 +472,14 @@ body {
     padding: 0px;
 }
 
+/* estilos para responsive en mi perfil  */
+@media only screen and (max-width: 1025px) {
+    
+    #img_perfil {
+        width: 100%;
+    }
+}
+
 </style>
 <script>
+</script>

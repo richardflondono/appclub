@@ -3,8 +3,8 @@
     <div class="nav-wrapper black">
         <div class="col-sm-12">
           <div class="row">
-            <div class="col-sm-2">
-              <router-link to="/" class="brand-logo"><img src="../assets/logo.png"></router-link>
+            <div class="col-sm-1">
+              <router-link to="/" class="brand-logo"><img id="img_nav" src="../assets/logo.png"></router-link>
             </div>
             <div v-if="!isLoggedIn" class="col-sm-8 contenedor-info-navbar">
               <span class="border-navbar">Sobre Nosotros</span>
@@ -18,7 +18,7 @@
                 <div class="col-sm-6">
                   <div class="container">
                     
-                    <input style="" placeholder="Buscar">
+                    <input id="buscar_nav" placeholder="Buscar">
                   
                   </div>
                 </div>
@@ -59,7 +59,7 @@
               </div>
               </div>
             </div>
-            <div v-if="isLoggedIn" class="col-sm-4">
+            <div v-if="isLoggedIn" class="col-sm-5">
               <button v-if="isLoggedIn" class="btn btn_este" v-on:click="logout"><p>Salir</p></button>
               <router-link to="/perfil"> 
                 <button v-if="isLoggedIn" class="btn btn_este" ><p>Mi Perfil</p></button>
@@ -88,11 +88,15 @@
 input[type="submit"] {
     font-family: FontAwesome;
 }
+#buscar_nav{
+  color: white;
+}
+
 dropdown{
   float :initial;
 }
-img  {
-  width: 40%;
+#img_nav  {
+  width: 95%;
 }
 #last-nav-border{
   padding: 0 5px;
@@ -117,6 +121,13 @@ img  {
 .container_este{
 border-radius: 50px; 
 background-color: #4D4D4D;
+}
+/* estilos para responsive en navbar  */
+@media only screen and (max-width: 1000px) {
+    
+    #img_perfil {
+        width: 100%;
+    }
 }
 </style>
 
