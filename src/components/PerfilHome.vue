@@ -7,7 +7,7 @@
 
             <div class="row">
             
-            <img id="img_perfil" style="float: left;width: 5  i{}j0%;margin-right: 10px;border: 1px solid #797B7F;" src="../assets/profile.jpeg">
+            <img id="img_perfil" style="float: left;width: 5  i{}j0%;margin-right: 10px;border: 1px solid #797B7F;" src="../assets/team_pic.png">
            
             <h6 style="color: #FBB829;text-transform: uppercase;font-size: 20px;">NOMBRE DEL EQUIPO</h6>
             <span>Cali Colombia</span>
@@ -113,8 +113,14 @@
             </ul>
             <div class="tab-content">
             <div id="menu1" class="container tab-pane active"><br>
-            <h3>Cronograma</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <div class="container" style="background: #333333;">
+                <span>
+                    <img src="../assets/user_pic.png" style="float: left;">
+                    <h4 style="color: #FBB829; padding: 5px 5px 5px 5px;">¿Quien es Nombre de Usuario?</h4>
+                    <p style="padding: 5px 5px 5px 5px;">Nos encantaria conocerte un poco más. Cuéntanos un poco sobre que posibilidades extraordinaria eres hoy.</p>
+                    <p style="padding: 5px 5px 5px 5px;">Recuerda actualizarnos tu visión cada tanto, en la comunidad estaremos encantados de saber más sobre ti. ¡Así que mantenos al tanto!</p>
+                </span>
+            </div>
             
             </div>
             <div id="menu2" class="container tab-pane">
@@ -333,7 +339,7 @@ body {
 #wrapper-perfil {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
     padding: 20px 0;
 }
@@ -345,7 +351,7 @@ body {
 
 .column-1-perfil {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
     background: #FFF;
     color: #1A1A1A;
@@ -384,13 +390,13 @@ body {
 }
 
 .column-2-perfil span {
-    font: 40px 'Fjalla One', Arial, sans-serif;
+    font: 16px 'Fjalla One', Arial, sans-serif;
     display: block;
-    color: #FFF;
-    padding: 30px 0;
-    text-transform: uppercase;
+    color: #808080;
+    padding: 0px 0;
     text-align: center;
-    background: #1A1A1A;
+    background: #333333;
+    float: left;
 }
 
 .column-1-perfil div {
@@ -401,8 +407,8 @@ body {
 }
 
 .column-2-perfil {
-    grid-column-start: 4;
-    grid-column-end: 9;
+    grid-column-start: 5;
+    grid-column-end: 10;
     grid-row-start: 1;
     background: #FFF;
 }
@@ -441,8 +447,8 @@ body {
 }
 
 .column-3-perfil {
-    grid-column-start: 9;
-    grid-column-end: 12;
+    grid-column-start: 10;
+    grid-column-end: 13;
     grid-row-start: 1;
     background: #FFF;
 }
