@@ -17,9 +17,9 @@
               <div class="row">
                 <div class="col-sm-6">
                   <div class="container">
-                    <form>
-                      <input type="submit" class="fa fa-input" value="&#xf002; Buscar..." name="buscar"  style=" height: 30px; width: 250px; color: white; background: #6b6b6b;border-radius:  30px;padding:  0 0 0 15px;">
-                    </form>
+                    
+                    <input style="" placeholder="Buscar">
+                  
                   </div>
                 </div>
               <div class="col-sm-6">
@@ -113,6 +113,10 @@ img  {
     float: right!important;
     margin-top: 10px!important;
     margin-right: 10px!important;
+}
+.container_este{
+border-radius: 50px; 
+background-color: #4D4D4D;
 }
 </style>
 

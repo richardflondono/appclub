@@ -21,70 +21,70 @@
                             <div id="grid-II-perfil">
                                     
                                     <div>
-                                    <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                    <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
                                     
                                     <div>
-                                    <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
                                       <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                     <div>
-                                        <img src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/team.jpg">
                                     </div>
 
                                 </div>
@@ -92,22 +92,24 @@
     </div><!-- Primer col -->
 
     <div class="column-2-perfil"><!-- Segunda col -->
+        <div class="container" style="background-color: #1A1A1A;">
+            <p style="color: #fff;text-align: center">Proximamente:</p>
+            <p style="color: #fff;text-align: center">Tu contrato de vida y metas diarias.</p>
+        </div>
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Cronograma<!--/Cap--></a>
+            <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Biografia<!--/Cap--></a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Equipos</a>
+            <a class="nav-link" data-toggle="tab" href="#menu2">Logros</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu3">Talleres</a>
+            <a class="nav-link" data-toggle="tab" href="#menu3">Portafolio</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu4">Financiero</a>
+            <a class="nav-link" data-toggle="tab" href="#menu4">Empresas</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu5">Actividades</a>
-            </li>
+            
             </ul>
             <div class="tab-content">
             <div id="menu1" class="container tab-pane active"><br>
@@ -261,15 +263,11 @@
                 </div>
             </div>
             <div id="menu3" class="container tab-pane"><br>
-            <h3>Talleres</h3>
+            <h3>Portafolio</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
             <div id="menu4" class="container tab-pane"><br>
-            <h3>Financiero</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu5" class="container tab-pane"><br>
-            <h3>Actividades</h3>
+            <h3>Empresas</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
             </div>
@@ -341,7 +339,7 @@ body {
 }
 .column-1-perfil {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 4;
     grid-row-start: 1;
     background: #FFF;
     color: #1A1A1A;
@@ -349,7 +347,7 @@ body {
 }
 
 .column-1-perfil img {
-    margin: 10px auto;
+    margin: 0px auto;
     width: 70%;
 }
 
@@ -391,14 +389,14 @@ body {
 
 .column-1-perfil div {
     display: block;
-    margin: 12px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     border: 1px solid #808080;
 }
 
 .column-2-perfil {
-    grid-column-start: 5;
-    grid-column-end: 10;
+    grid-column-start: 4;
+    grid-column-end: 9;
     grid-row-start: 1;
     background: #FFF;
 }
@@ -408,7 +406,7 @@ body {
     grid-template-columns: 2;
     grid-template-rows: auto;
     grid-gap: 8px;
-    padding: 0 8px 8px 8px;
+    padding: 0 0px 0px 0px;
     height: auto;
     overflow-y: scroll;
 }
@@ -439,7 +437,7 @@ body {
 
 
 .column-3-perfil {
-    grid-column-start: 10;
+    grid-column-start: 9;
     grid-column-end: 12;
     grid-row-start: 1;
     background: #FFF;
