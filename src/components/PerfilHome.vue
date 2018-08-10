@@ -113,7 +113,8 @@
             </ul>
             <div class="tab-content">
             <div id="menu1" class="container tab-pane active"><br>
-            <div class="container" style="background: #333333;">
+            <div class="row">
+            <div class="container" style="background: #333333; padding: 0px 0px 0px 0px">
                 <span>
                     <img src="../assets/user_pic.png" style="float: left;">
                     <h4 style="color: #FBB829; padding: 5px 5px 5px 5px;">¿Quien es Nombre de Usuario?</h4>
@@ -121,7 +122,31 @@
                     <p style="padding: 5px 5px 5px 5px;">Recuerda actualizarnos tu visión cada tanto, en la comunidad estaremos encantados de saber más sobre ti. ¡Así que mantenos al tanto!</p>
                 </span>
             </div>
-            
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4 style="color: #FBB829;">Contacto</h4><hr>
+                    
+                    <p>correoElectronico@gmail.com</p>
+                    <p>3153334444</p>
+                    <p>Agregar otro telefono</p>
+                    <p>Cuenta de Facebook</p>
+                    <p>Agregar otro teléfono</p>
+                   <!--<input placeholder="">
+                    <input placeholder="">
+                    <input placeholder="">
+                    <input placeholder="">
+                    <input placeholder="">  -->
+                </div>
+                <div class="col-sm-6">
+                    <h4 style="color: #FBB829;">Personal</h4><hr>
+                    <p>calle 00 # 00 A - 00 A, apto 520</p>
+                    <p>88888888</p>
+                    <p>Cali, Colombia</p>
+                    <p>00 de Enero de 2000</p>
+                    <p>Género</p>
+                </div>
+            </div>
             </div>
             <div id="menu2" class="container tab-pane">
                 
