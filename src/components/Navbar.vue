@@ -22,56 +22,67 @@
                   
                   </div>
                 </div>
-              <div class="col-sm-6">
-                <div class="row">
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Ciudad
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Ciudad
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                          <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Prom
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                          <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Personas
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                          <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Prom
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Personas
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-              </div>
-              </div>
-              </div>
               </div>
             </div>
             <div v-if="isLoggedIn" class="col-sm-5">
-              <button v-if="isLoggedIn" class="btn btn_este" v-on:click="logout"><p>Salir</p></button>
+              <button v-if="isLoggedIn" class="btn btn_este" v-on:click="logout"> 
+                  <img class="img_nav_button" src="" alt=""><p class="p_nav">Salir</p>
+              </button>
               <router-link to="/perfil"> 
-                <button v-if="isLoggedIn" class="btn btn_este" ><p>Mi Perfil</p></button>
+                <button v-if="isLoggedIn" class="btn btn_este" >
+                   <img class="img_nav_button" src="../assets/nav_perfil_ic.png" alt=""><p class="p_nav">Mi Perfil</p>
+                   </button>
               </router-link>
               <router-link to="/negocios"> 
-                <button v-if="isLoggedIn" class="btn btn_este" ><p>Negocios</p></button>
+                <button v-if="isLoggedIn" class="btn btn_este" > 
+                  <img class="img_nav_button" src="" alt=""><p class="p_nav">Negocios</p>
+                  </button>
               </router-link>
               <router-link to="/comunidad"> 
-                <button v-if="isLoggedIn" class="btn btn_este" ><p>Comunidad</p></button>
+                <button v-if="isLoggedIn" class="btn btn_este" >
+                  <img class="img_nav_button" src="../assets/nav_comunidad_ic.png" alt=""><p class="p_nav">Comunidad</p>
+                  </button>
               </router-link>
               <a href="/"> 
-                <button v-if="isLoggedIn" class="btn btn_este" id="nav_home" ><p>Home</p></button>
+                <button v-if="isLoggedIn" class="btn btn_este" >
+                  <img class="img_nav_button" src="../assets/nav_casa_ic.png" alt=""><p class="p_nav">Home</p>
+                </button>
               </a>
             </div>
             
@@ -82,9 +93,6 @@
 
 </template>
 <style>
-#nav_home {
-    background: no-repeat url(/static/img/pexels-photo-450035.ee06817.jpeg);
-    }
 input[type="submit"] {
     font-family: FontAwesome;
 }
@@ -98,6 +106,10 @@ dropdown{
 #img_nav  {
   width: 95%;
 }
+.p_nav {
+  margin: 0;
+  padding: 0;
+}
 #last-nav-border{
   padding: 0 5px;
 }
@@ -108,15 +120,19 @@ dropdown{
   border-right: 1px solid;
   padding: 0 5px 0 5px;
 }
+.img_nav_button{
+  width: 28px;
+}
 .btn_este {
-    background: #FBB829!important;
-    font-size: 11px!important;
-    font-weight: 800!important;
-    width: auto!important;
-    color: #1A1A1A!important;
-    float: right!important;
-    margin-top: 10px!important;
-    margin-right: 10px!important;
+  height: auto;
+  background:transparent;
+  font-size: 11px!important;
+  font-weight: 800!important;
+  width: auto!important;
+  color: #d4d4d4!important;
+  float: right!important;
+  margin-top: 2px!important;
+  margin-right: 10px!important;
 }
 .container_este{
 border-radius: 50px; 
