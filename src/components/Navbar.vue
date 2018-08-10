@@ -69,7 +69,7 @@
               </router-link>
               <router-link to="/negocios"> 
                 <button v-if="isLoggedIn" class="btn btn_este" > 
-                  <img class="img_nav_button" src="" alt=""><p class="p_nav">Negocios</p>
+                  <img class="img_nav_button" src="../assets/nav_CE_ic.png" alt=""><p class="p_nav">Negocios</p>
                   </button>
               </router-link>
               <router-link to="/comunidad"> 

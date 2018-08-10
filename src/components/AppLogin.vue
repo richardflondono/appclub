@@ -105,7 +105,7 @@ body{
     margin: 7px 5px!important;
 }
 
-.btn_login:hover, .btn_login:active{
+.btn_login:hover, .btn_login:active, .btn_login:focus{
     background: #f7931e!important;
 }
 
@@ -120,7 +120,7 @@ body{
     margin: 7px 5px!important;
 }
 
-.btn_login_c:hover, .btn_login_c:active{
+.btn_login_c:hover, .btn_login_c:active, .btn_login_c:focus{
     background: #797B7F!important;
 }
 

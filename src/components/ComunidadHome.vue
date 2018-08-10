@@ -190,29 +190,27 @@
             
             <!-- Contenido Tab Eventos -->
             <div id="menu2" class="container tab-pane"><br>
-            <h3>Menu 2</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>Eventos</h3>
+                <p>Pronto encontraras información acerca de tus Eventos</p>
             </div>
 
             <!-- Contenido Tab Socios -->
             <div id="menu3" class="container tab-pane"><br>
-            <h3>Menu 3</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <h3>Socios</h3>
+                <p>Pronto encontraras información acerca de tus Socios</p>
             </div>
 
             <!-- Contenido Tab Beneficios -->
             <div id="menu4" class="container tab-pane"><br>
-            <h3>Menu 4</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <h3>Beneficios</h3>
+                <p>Pronto encontraras información acerca de tus Beneficios</p>
             </div>
 
             <!--Contenido Tab Mapa -->
             <div id="menu5" class="container tab-pane"><br>
-            <h3>Menu 5</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-
-            
+                <h3>Mapa</h3>
+                <p>Pronto podras ver el mapa de tu ciudad </p>
+             </div>
 
             </div>
         </div><!-- Segunda col -->

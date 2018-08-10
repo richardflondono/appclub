@@ -5,7 +5,7 @@
             <div class="form-group">
                     <table class="table table-borderless menu1">
             <tbody>
-            <tr>
+            <!--tr>
                 <td style="color: #FBB829">Foto de Perfil:</td>
                 <td> 
                     <button raised class="btn" @click="onPickFile"> Cargar Imagen </button>
@@ -16,7 +16,7 @@
                     ref="fileInput"
                     accept="image/*"
                     @change="onFilePicked"></td>
-            </tr>
+            </tr-->
             <tr>
                 
                 <td style="color: #FBB829">Nombre:</td>
@@ -104,9 +104,6 @@
 
             </tbody>
         </table>
-        <hr>
-        <h6 style="color: #FBB829">Estado de Registro</h6>
-        <input type="text" class="form-control form-control borde" v-model="newUser.estatus" placeholder="Agregar">
         <hr>
             
             <button type="submit" class="btn btn-warning btn-block">Registrar</button>

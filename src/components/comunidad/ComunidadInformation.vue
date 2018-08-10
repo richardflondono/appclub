@@ -21,16 +21,15 @@
         </div>
     <div>
         <div class="content">
-            <h4 class="center" style="color: #000;">¡Ahora somos más!</h4>
-            <div class="content rounded-circle center">
+            <h4 class="center" style="color: #000; font-family:  bebas;">¡Ahora somos más!</h4>
+            <div class="content  center" style="border:0px">
                 <p>865</p>
             </div>
             <h4 class="center" style="color:#000;">Usuarios</h4>
 
-            <p class="center" style="color: #808080">La tercer sociedad más grande de la actualidad, junto a Mazones e Iluminatus.
-                
+            <p class="center" style="color: #808080">"Tu contribución permite que esta comunidad siga creciendo"
             </p>
-            <h4 class="center" style="color: #FBB829;">¡Vamos por el mundo!</h4>
+            <h4 class="center" style="color: #FBB829; font-family:  bebas;">¡Vamos por el mundo!</h4>
         </div>
 
     </div>
