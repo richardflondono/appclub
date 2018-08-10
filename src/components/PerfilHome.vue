@@ -21,70 +21,70 @@
                             <div id="grid-II-perfil">
                                     
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
                                     
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
                                       <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                     <div>
-                                        <img class="img-fluid w-100" src="../assets/team.jpg">
+                                        <img class="img-fluid w-100" src="../assets/user_image.png">
                                     </div>
 
                                 </div>
@@ -305,47 +305,10 @@
         </div><!-- Segunda col -->
 
     <div class="column-3-perfil"><!-- Tercera col -->
-    <table class="table table-borderless">
-        <tbody>
-            <tr>
-        <td><h6>Coordinador:</h6></td>
-        <td><a href="">Andres Salazar</a></td>
-        </tr>
-        <tr>
-        <td><h6>Capitán:</h6></td>
-        <td><a href="">Felipe Hernandez</a></td>
-        </tr>
-        <tr>
-        <td><h6>Estado:</h6></td>
-        <td><a href="">Maestria Nvl 1</a></td>
-        </tr>
-        <tr><td>
-  <h6 >Visión:</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-        </td>
-        </tr>
-        <tr><td>
-    <h6>Legado:</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
-        </td>
-        </tr>
-        <tr><td>
-  <h6 style="color: #FBB829">Enrolamiento:</h6>
-
-  <ul>
-      <li style="color: #000000">320 Vidas impactadas</li>
-      <li style="color: #000000">7 Vuelos</li>
-      <li style="color: #000000">250 Elevaciones</li>
-      <li style="color: #000000">68 Angeles activos</li>
-  </ul>
-</td></tr>
-    <tr><td>
-  <h6 style="color: #FBB829">Salto cuantico:</h6>
-  <p>10 Bailarinas</p>
-  </td></tr>
-    </tbody>
-    </table>
-        </div><!-- Tercera col -->
+        <div class="container" style="background-color: #1A1A1A;">
+        <p style="color: #fff; padding: 15px 10px" >NOTICIAS DE LA COMUNIDAD</p>
+        </div>    
+    </div><!-- Tercera col -->
 
   
 
@@ -428,7 +391,7 @@ body {
     display: block;
     margin: 0px;
     padding: 0px;
-    border: 1px solid #808080;
+    border: 3px ;
 }
 
 .column-2-perfil {
