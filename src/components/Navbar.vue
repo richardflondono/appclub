@@ -24,7 +24,6 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="row">
-                    <div>
                       <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Ciudad
@@ -55,7 +54,6 @@
                           <button class="dropdown-item" type="button">Something else here</button>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -124,8 +122,8 @@ dropdown{
   width: 28px;
 }
 .btn_este {
-  height: auto;
-  background:transparent;
+  height: auto!important;
+  background:transparent!important;
   font-size: 11px!important;
   font-weight: 800!important;
   width: auto!important;
@@ -133,6 +131,10 @@ dropdown{
   float: right!important;
   margin-top: 2px!important;
   margin-right: 10px!important;
+}
+.btn_este:hover {
+
+  background:transparent!important;
 }
 .container_este{
 border-radius: 50px; 
