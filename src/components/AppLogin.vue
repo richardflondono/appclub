@@ -125,12 +125,12 @@ body{
 }
 
 .a_appLoggin, .a_appLoggin:active, .a_appLoggin:visited {
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: underline;
 }
 
 .a_appLoggin {
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: underline;
     color:#FFF;
 }
@@ -170,6 +170,7 @@ body{
     color: #FBB829;
     font-family: 'Fjalla One', Arial, sans-serif;
 }
+
 
 </style>
 

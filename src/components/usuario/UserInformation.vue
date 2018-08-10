@@ -7,8 +7,8 @@
             <p class="nombre_us">{{loggedUser.fName}} {{loggedUser.lName}}</p>
             
             <ul>
-                <li><strong>Status</strong></li>
-                <li><strong>{{loggedUser.rol}}</strong></li>
+                <li style="margin: 0px"><strong>Status : {{loggedUser.rol}}</strong></li>
+               <!-- <li style="margin: 0px"><strong></strong></li>-->
                 <li>Estadisticas</li>
                 <li>Socios</li>
                 <li>Empresas</li>
@@ -29,7 +29,7 @@
     grid-row-start: 1;
     background: #4D4D4D;
     color: #E6E6E6;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .rounded-circle{
@@ -84,6 +84,11 @@
     padding: 10px;
     border: 1px solid #808080;
 }
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
 </style>
 
 <script>
