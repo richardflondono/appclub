@@ -9,8 +9,7 @@
             
             
             <ul>
-                <li><strong>Status</strong></li>
-                <li><strong>{{loggedUser.rol}}</strong></li>
+                <li><strong>Status: {{loggedUser.rol}}</strong></li>
                 <li>Estadisticas</li>
                 <li>Socios</li>
                 <li>Empresas</li>
@@ -22,9 +21,9 @@
     <div>
         <div class="content">
             <h4 class="center" style="color: #000;">¡Ahora somos más!</h4>
-            <div class="content rounded-circle center">
-                <p>865</p>
-            </div>
+            
+            <p style="font-size: 20px; " class="center">865</p>
+            
             <h4 class="center" style="color:#000;">Usuarios</h4>
 
             <p class="center" style="color: #808080">La tercer sociedad más grande de la actualidad, junto a Mazones e Iluminatus.
@@ -46,13 +45,10 @@
     grid-row-start: 1;
     background: #4D4D4D;
     color: #E6E6E6;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.rounded-circle{
-    background-color: #FBB829;
-    color:#1A1A1A;
-}
+
 
 .column-1 img {
     margin: 10px auto;
@@ -100,6 +96,10 @@
     margin: 12px;
     padding: 10px;
     border: 1px solid #808080;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
 }
 </style>
 

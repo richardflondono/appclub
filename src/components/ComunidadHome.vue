@@ -9,19 +9,19 @@
     <div class="column-2-comunidad"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#menu1">Noticias</a>
+            <a class="nav-link active"  data-toggle="tab" href="#menu1">Noticias</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Eventos</a>
+            <a class="nav-link" style="color:#777" data-toggle="tab" href="#menu2">Eventos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu3">Socios</a>
+            <a class="nav-link" style="color:#777" data-toggle="tab" href="#menu3">Socios</a>
             </li>
              <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu4">Beneficios</a>
+            <a class="nav-link" style="color:#777" data-toggle="tab" href="#menu4">Beneficios</a>
             </li>
              <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu5">Mapa</a>
+            <a class="nav-link" style="color:#777" data-toggle="tab" href="#menu5">Mapa</a>
             </li>
             </ul>
 
@@ -190,26 +190,26 @@
             
             <!-- Contenido Tab Eventos -->
             <div id="menu2" class="container tab-pane"><br>
-            <h3>Menu 2</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3>Próximamente</h3>
+            <h3>Eventos</h3>
             </div>
 
             <!-- Contenido Tab Socios -->
             <div id="menu3" class="container tab-pane"><br>
-            <h3>Menu 3</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <h3>Próximamente</h3>
+            <h3>Socios</h3>
             </div>
 
             <!-- Contenido Tab Beneficios -->
             <div id="menu4" class="container tab-pane"><br>
-            <h3>Menu 4</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <h3>Próximamente</h3>
+            <h3>Beneficios</h3>
             </div>
 
             <!--Contenido Tab Mapa -->
             <div id="menu5" class="container tab-pane"><br>
-            <h3>Menu 5</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <h3>Próximamente</h3>
+            <h3>Mapa</h3>
             </div>
 
             

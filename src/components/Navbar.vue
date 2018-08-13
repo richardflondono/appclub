@@ -18,12 +18,20 @@
                 <div class="col-sm-6">
                   <div class="container">
                     
+                    <button class="btn btn-secondary" type="button">
+                      <!-- Lupa -->
+                    </button>
                     <input id="buscar_nav" placeholder="Buscar">
                   
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="row">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <!-- Aquí va -->
+                        </button>
+                      </div>
                       <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Ciudad
@@ -92,7 +100,7 @@
 </template>
 <style>
 input[type="submit"] {
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
 }
 #buscar_nav{
   color: white;
@@ -116,30 +124,82 @@ dropdown{
 }
 .border-navbar{
   border-right: 1px solid;
-  padding: 0 5px 0 5px;
+  padding: 0 5px;
 }
 .img_nav_button{
   width: 28px;
 }
 .btn_este {
-  height: auto!important;
-  background:transparent!important;
-  font-size: 11px!important;
-  font-weight: 800!important;
-  width: auto!important;
-  color: #d4d4d4!important;
-  float: right!important;
-  margin-top: 2px!important;
-  margin-right: 10px!important;
+  height: auto;
+  background:transparent;
+  font-size: 11px;
+  font-weight: 800;
+  color: #d4d4d4;
+  float: right;
+  margin: 2px 10px 0 0;
 }
 .btn_este:hover {
-
-  background:transparent!important;
+  background:transparent;
 }
 .container_este{
 border-radius: 50px; 
 background-color: #4D4D4D;
 }
+
+.row > .dropdown .btn {
+  margin: 0;
+  border-radius: 0;
+  text-shadow: 0;
+  background: #808080;
+  border-color: #808080;
+  transition: background-color border-color 200ms ease-in 10ms;
+}
+
+.row > .dropdown .btn:hover {
+  background-color: #4d4d4d;
+  border-color: #4d4d4d;
+}
+
+.dropdown:first-child > .btn {
+  padding: 10px 30px;
+  background: no-repeat center url(../assets/filtros_ic.png) #808080;
+  border-radius: 50px 0 0 50px;
+}
+
+.dropdown:last-child > .btn {
+  border-radius: 0 50px 50px 0;
+}
+
+input#buscar_nav {
+  background-color: #808080;
+  display: inline-block;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  box-sizing: border-box;
+  padding: 5px 6px;
+  margin: 0;
+  height: 4.5ch;
+  width: 33ch;
+}
+
+
+
+.container > .btn {
+  background: no-repeat center url(../assets/lupa_ic.png) #808080;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 18px 24px;
+  margin: 0 -3px 2px 0;
+  height: 5ch;
+}
+
+.container > .btn:hover {
+  background: no-repeat url(../assets/lupa_ic_hover.png) #4d4d4d;
+  background-position: 7.2px 2px;
+}
+
 /* estilos para responsive en navbar  */
 @media only screen and (max-width: 1000px) {
     
