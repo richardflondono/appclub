@@ -9,19 +9,19 @@
     <div class="column-2-comunidad"><!-- Segunda col -->
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#menu1">Noticias</a>
+            <a class="nav-link active"  data-toggle="tab" href="#menu1">Noticias</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Eventos</a>
+            <a class="nav-link" style="color:#777" data-toggle="tab" href="#menu2">Eventos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu3">Socios</a>
+            <a class="nav-link" style="color:#777" data-toggle="tab" href="#menu3">Socios</a>
             </li>
              <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu4">Beneficios</a>
+            <a class="nav-link" style="color:#777" data-toggle="tab" href="#menu4">Beneficios</a>
             </li>
              <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu5">Mapa</a>
+            <a class="nav-link" style="color:#777" data-toggle="tab" href="#menu5">Mapa</a>
             </li>
             </ul>
 

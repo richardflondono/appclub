@@ -74,6 +74,11 @@ body{
     margin: 14px 0!important;
 }
 
+.input_login:focus, .input_login:active {
+    border: #FBB829!important;
+    box-shadow: 0 1px 0 0 #FBB829!important;
+}
+
 .contenedor_bienvenidos{
     margin: 15px auto;
     padding: 20px 40px;
