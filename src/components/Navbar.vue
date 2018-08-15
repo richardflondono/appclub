@@ -54,7 +54,7 @@
                       </div>
                       <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Personas
+                          Categorias
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                           <button class="dropdown-item" type="button">Action</button>
@@ -129,18 +129,21 @@ dropdown{
 .img_nav_button{
   width: 28px;
 }
+
 .btn_este {
-  height: auto;
-  background:transparent;
-  font-size: 11px;
-  font-weight: 800;
-  color: #d4d4d4;
-  float: right;
-  margin: 2px 10px 0 0;
+  height: auto!important;
+  background:transparent!important;
+  font-size: 11px!important;
+  font-weight: 800!important;
+  color: #d4d4d4!important;
+  float: right!important;
+  margin: 2px 10px 0 0!important;
 }
-.btn_este:hover {
-  background:transparent;
+
+.btn_este:hover, .btn_este:focus, .btn_este:active, .btn_este:visited {
+  background:transparent!important;
 }
+
 .container_este{
 border-radius: 50px; 
 background-color: #4D4D4D;
@@ -150,9 +153,10 @@ background-color: #4D4D4D;
   margin: 0;
   border-radius: 0;
   text-shadow: 0;
-  background: #808080;
-  border-color: #808080;
+  background: #666666;
+  border-color: #666666;
   transition: background-color border-color 200ms ease-in 10ms;
+  font-size: 0.9rem;
 }
 
 .row > .dropdown .btn:hover {
@@ -162,7 +166,7 @@ background-color: #4D4D4D;
 
 .dropdown:first-child > .btn {
   padding: 10px 30px;
-  background: no-repeat center url(../assets/filtros_ic.png) #808080;
+  background: no-repeat center url(../assets/filtros_ic.png) #666666;
   border-radius: 50px 0 0 50px;
 }
 
@@ -171,7 +175,7 @@ background-color: #4D4D4D;
 }
 
 input#buscar_nav {
-  background-color: #808080;
+  background-color: #4d4d4d;
   display: inline-block;
   border: none;
   border-radius: 0 50px 50px 0;
@@ -182,17 +186,18 @@ input#buscar_nav {
   width: 33ch;
 }
 
-
-
 .container > .btn {
-  background: no-repeat center url(../assets/lupa_ic.png) #808080;
+  background: no-repeat center url(../assets/lupa_ic.png) #4d4d4d;
   border: none;
   border-radius: 50px 0 0 50px;
   display: inline-block;
   box-sizing: border-box;
   padding: 18px 24px;
   margin: 0 -3px 2px 0;
-  height: 5ch;
+  height: 4.5ch;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 .container > .btn:hover {
