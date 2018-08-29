@@ -6,7 +6,7 @@
                     <p class="titulo_login">Bienvenid@s</p>
 
                     <p class="appLogin_p">Esta es tu plataforma de transformación, creación y progreso.<br>
-                    <span>¿Que meta extraordinario vas a cumplir hoy?</span></p>
+                    <span>¿Que meta extraordinario vas a cumplir hoy? </span></p>
                     <form v-on:submit.prevent="noop">
                         <input class="input_login" type="text" v-model="email" placeholder="Codigo de Usuario">
                         <a href="" class="a_appLoggin">Otras formas de ingreso</a>
