@@ -1,11 +1,7 @@
 <template>
-  <nav>
-    <div class="nav-wrapper black">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-1">
-              <router-link to="/" class="brand-logo"><img id="img_nav" src="../assets/logo.png"></router-link>
-            </div>
+  <nav class="user-navbar">
+    <router-link to="/" class="brand-logo"><img id="img_nav" src="../assets/logo.png"></router-link>
+
             <div v-if="!isLoggedIn" class="col-sm-8 contenedor-info-navbar">
               <span class="border-navbar">Sobre Nosotros</span>
               <span class="border-navbar">Entrenamiento</span>
@@ -13,105 +9,114 @@
               <span class="border-navbar">Comunidad</span>
               <span id="last-nav-border">Negocios</span>
             </div>
+
             <div v-if="isLoggedIn" class="col-sm-6 contenedor-info-navbar">
+              <div class="container"> <!--- Búsqueda -->
+                <button class="btn btn-secondary" type="button">
+                  <!-- Lupa -->
+                </button>
+                <input type="text" id="buscar_nav" placeholder="Buscar">
+              </div> <!--- .\Búsqueda -->
+
               <div class="row">
-                <div class="col-sm-6">
-                  <div class="container">
-                    
-                    <button class="btn btn-secondary" type="button">
-                      <!-- Lupa -->
-                    </button>
-                    <input id="buscar_nav" placeholder="Buscar">
-                  
+                <div class="dropdown">
+                  <button class="btn btn-secondary" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- Aquí va -->
+                  </button>
+                </div>
+
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ciudad
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="row">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <!-- Aquí va -->
-                        </button>
-                      </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Ciudad
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                          <button class="dropdown-item" type="button">Action</button>
-                          <button class="dropdown-item" type="button">Another action</button>
-                          <button class="dropdown-item" type="button">Something else here</button>
-                        </div>
-                      </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Prom
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                          <button class="dropdown-item" type="button">Action</button>
-                          <button class="dropdown-item" type="button">Another action</button>
-                          <button class="dropdown-item" type="button">Something else here</button>
-                        </div>
-                      </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Categorias
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                          <button class="dropdown-item" type="button">Action</button>
-                          <button class="dropdown-item" type="button">Another action</button>
-                          <button class="dropdown-item" type="button">Something else here</button>
-                        </div>
-                      </div>
-                  </div>
+
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Prom
+                  </button>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categorias
+                  </button>
                 </div>
               </div>
             </div>
+
             <div v-if="isLoggedIn" class="col-sm-5">
-              <button v-if="isLoggedIn" class="btn btn_este" v-on:click="logout"> 
+              <button v-if="isLoggedIn" class="btn btn_este" v-on:click="logout">
                   <img class="img_nav_button" src="" alt=""><p class="p_nav">Salir</p>
               </button>
-              <router-link to="/perfil"> 
+              <router-link to="/perfil">
                 <button v-if="isLoggedIn" class="btn btn_este" >
                    <img class="img_nav_button" src="../assets/nav_perfil_ic.png" alt=""><p class="p_nav">Mi Perfil</p>
                    </button>
               </router-link>
-              <router-link to="/negocios"> 
-                <button v-if="isLoggedIn" class="btn btn_este" > 
+              <router-link to="/negocios">
+                <button v-if="isLoggedIn" class="btn btn_este" >
                   <img class="img_nav_button" src="../assets/nav_CE_ic.png" alt=""><p class="p_nav">Negocios</p>
                   </button>
               </router-link>
-              <router-link to="/comunidad"> 
+              <router-link to="/comunidad">
                 <button v-if="isLoggedIn" class="btn btn_este" >
                   <img class="img_nav_button" src="../assets/nav_comunidad_ic.png" alt=""><p class="p_nav">Comunidad</p>
                   </button>
               </router-link>
-              <a href="/"> 
+              <a href="/">
                 <button v-if="isLoggedIn" class="btn btn_este" >
                   <img class="img_nav_button" src="../assets/nav_casa_ic.png" alt=""><p class="p_nav">Home</p>
                 </button>
               </a>
             </div>
-            
-          </div>
-        </div>
-    </div>
   </nav>
 
 </template>
 <style>
+.user-navbar {
+  border: 2px solid #FFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: #000;
+  padding: 0;
+}
+
+.user-navbar .brand-logo {
+  border: 2px solid #FF0000;
+}
+
+.user-navbar .brand-logo #img_nav  {
+  width: 100px;
+}
+
+.row {
+  width: auto;
+  border: 2px solid #00FF00;
+}
+
+.col-sm-1 {
+  border: 2px solid #0000FF;
+}
+
 input[type="submit"] {
     font-family: "FontAwesome";
 }
-#buscar_nav{
+
+#buscar_nav {
   color: white;
 }
 
-dropdown{
+dropdown {
   float :initial;
 }
-#img_nav  {
-  width: 95%;
-}
+
 .p_nav {
   margin: 0;
   padding: 0;
@@ -145,7 +150,7 @@ dropdown{
 }
 
 .container_este{
-border-radius: 50px; 
+border-radius: 50px;
 background-color: #4D4D4D;
 }
 
@@ -207,7 +212,7 @@ input#buscar_nav {
 
 /* estilos para responsive en navbar  */
 @media only screen and (max-width: 1000px) {
-    
+
     #img_perfil {
         width: 100%;
     }
