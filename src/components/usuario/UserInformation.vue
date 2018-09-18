@@ -1,11 +1,12 @@
 <template>
-    <div class="column-1"><!-- Primer col -->
+    <div class="userinfo-1"><!-- Primer col -->
  <!--<span>{{loggedUser.rol}}</span>-->
 
-        <div>
-            <img src="../../assets/profile.jpeg">
+            <div class="userinfo_cont_img">
+              <!-- Imagen de usuario -->
+            </div>
             <p class="nombre_us">{{loggedUser.fName}} {{loggedUser.lName}}</p>
-            
+
             <ul>
                 <li style="margin: 0px"><strong>Status : {{loggedUser.rol}}</strong></li>
                <!-- <li style="margin: 0px"><strong></strong></li>-->
@@ -15,15 +16,15 @@
                 <li>Entrenadores</li>
                 <li>Configuracion</li>
                 <li>Seguridad</li>
+                <li v-on:click="logout">Salir</li>
             </ul>
-        </div>
 
-    </div>    
+    </div>
 </template>
 
 <style>
 
-.column-1 {
+.userinfo-1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -32,14 +33,13 @@
     font-size: 18px;
 }
 
-.rounded-circle{
-    background-color: #FBB829;
-    color:#1A1A1A;
-}
-
-.column-1 img {
-    margin: 10px auto;
-    width: 100%;
+.userinfo-1 .userinfo_cont_img {
+  border-radius: 100px;
+  border: 1px solid #333;
+  margin: 10px auto 0 auto;
+  width: 160px;
+  height: 160px;
+  background: no-repeat url(../../assets/profile.jpeg) center/cover;
 }
 
 .column-1 p {
@@ -78,12 +78,6 @@
     background: #FBB829;
 }
 
-.column-1 div {
-    display: block;
-    margin: 12px;
-    padding: 10px;
-    border: 1px solid #808080;
-}
 ul {
     padding: 0;
     list-style-type: none;
@@ -99,7 +93,7 @@ let userRef = database.ref('user/')
 
 export default {
     name:'userInformation',
-    
+
     data(){
         return {
       loggedUser:{
@@ -131,7 +125,12 @@ export default {
     }
   },
   methods:{
-      
+    logout: function(){
+      console.log("prueba");
+      firebase.auth().signOut().then(() =>{
+        this.$router.go({path: this.$router.path});
+      });
+    }
     },
     created(){
     var este = this;
