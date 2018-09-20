@@ -17,13 +17,21 @@
 
           <div class="applogin_btn_div">
             <button type="button" v-on:click="login" class="applogin_btn_login">Inicio</button>
-            <button type="button" v-on:click="login" class="applogin_btn_login applogin_btn_login_gris">Comunidad</button>
-            <button type="button" v-on:click="login" class="applogin_btn_login applogin_btn_login_gris">Negocios</button>
+            <div class="applogin_btn_side">
+              <button type="button" v-on:click="login" class="applogin_btn_login">Comunidad</button>
+              <button type="button" v-on:click="login" class="applogin_btn_login">Negocios</button>
+            </div>
           </div>
         </form>
       </div>
 
-      <div class="applogin_col_prin-cuadro">
+    </div>
+
+    <div class="applogin_col_sec">
+      <p class="applogin_titulo">Este es un mensaje muy poderoso de invitación a ser parte de la comunidad más
+      poderosa del mundo desde el <span class="resaltador">amor</span> y el <span class="resaltador">compromiso</span>.</p>
+
+      <div class="applogin_col_sec_last">
         <p class="applogin_titulo">¿Aún no eres parte?</p>
 
         <p class="applogin_p">Somos una comunidad comprometida con crear un mundo más amoroso, justo y poderoso.<br>
@@ -33,12 +41,6 @@
           <button type="button" class="applogin_btn_login">Iniciar mi Entrenamiento</button>
         </div>
       </div>
-
-    </div>
-
-    <div class="applogin_col_sec">
-      <p class="applogin_titulo">Este es un mensaje muy poderoso de invitación a ser parte de la comunidad más
-      poderosa del mundo desde el <span class="resaltador">amor</span> y el <span class="resaltador">compromiso</span></p>.
     </div>
 
   </div> <!--- .\ Contenido -->
@@ -61,30 +63,22 @@ body{
 }
 
 .applogin_col_prin {
-  margin: 20px;
-  max-width: 430px;
+  margin: 10px;
+  max-width: 410px;
+  border: 2px solid #FF0000;
 }
 
 .applogin_col_prin .applogin_col_prin-cuadro {
-    margin: 0 0 20px 0;
+    margin: 0;
     padding: 20px;
     background: rgba(26 , 26 , 26 , 0.8);
     border: 2px solid #AAA;
 }
 
-.applogin_col_prin .applogin_col_prin-cuadro:last-child {
-    margin: 0;
-}
-
 .applogin_col_sec {
-  margin: 20px;
-  max-width: 800px;
-}
-
-.applogin_btn_div {
-  width: 90%;
-  margin: -10px auto 0 auto;
-  text-align: center;
+  margin: 10px;
+  max-width: 900px;
+  border: 2px solid #00FF00;
 }
 
 .applogin_input_login {
@@ -100,19 +94,51 @@ body{
 
 .applogin_input_login:focus,
 .applogin_input_login:active {
-    border: #FBB829 !important;
+    border: 1px solid #FBB829 !important;
     box-shadow: 0 1px 0 0 #FBB829 !important;
 }
 
-.applogin_btn_login {
-    border-radius: 400px 400px;
-    background: #FBB829;
-    font-size: 16px;
-    font-weight: 800;
-    color: #1A1A1A;
-    border: none !important;
-    padding: 6px 18px !important;
-    margin: 7px 5px !important;
+.applogin_btn_div {
+  margin: -10px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.applogin_btn_div .applogin_btn_side {
+  margin: 0;
+  width: calc(100%/2 - 2px);
+}
+
+.applogin_btn_div .applogin_btn_login {
+  opacity: .8;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  color: #1A1A1A;
+  border: 2px solid #f2f2f2 !important;
+}
+
+.applogin_btn_div .applogin_btn_login {
+  height: 170px;
+  width: calc(100%/2 - 2px);
+  background: no-repeat url(../assets/nav_casa_ic.png) center, #FBB829;
+  padding: 100px 0 0 0 !important;
+  margin: 0 4px 0 0 !important;
+}
+
+.applogin_btn_div .applogin_btn_side .applogin_btn_login {
+  height: 83px;
+  width: 100%;
+  background: no-repeat url(../assets/nav_casa_ic.png) center top 10px, #e6e6e6;
+  padding: 30px 0 0 0 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.applogin_btn_div .applogin_btn_side .applogin_btn_login:last-child {
+  margin: 0 !important;
 }
 
 .applogin_btn_login:hover,
@@ -121,18 +147,8 @@ body{
     background: #f7931e !important;
 }
 
-.applogin_btn_login_gris {
-    background: #B3B3B3;
-}
-
-.applogin_btn_login_gris:hover,
-.applogin_btn_login_gris:active,
-.applogin_btn_login_gris:focus{
-    background: #797B7F !important;
-}
-
 .applogin_a, .applogin_a:active, .applogin_a:visited {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: underline;
     color:#FFF;
     margin: 4px auto 4px 20px;
@@ -160,7 +176,6 @@ body{
     margin: 5px auto;
     text-transform: uppercase;
 }
-
 
 </style>
 

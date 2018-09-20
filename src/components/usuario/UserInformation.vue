@@ -36,9 +36,9 @@
 .userinfo-1 .userinfo_cont_img {
   border-radius: 100px;
   border: 1px solid #333;
-  margin: 10px auto 0 auto;
-  width: 160px;
-  height: 160px;
+    margin: 10px auto 0 auto;
+    width: 160px;
+    height: 160px;
   background: no-repeat url(../../assets/profile.jpeg) center/cover;
 }
 
