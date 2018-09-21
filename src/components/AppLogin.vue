@@ -7,10 +7,10 @@
         <p class="applogin_p">Esta es tu plataforma de transformación, creación y progreso.<br>
         <span class="resaltador">¿Que meta extraordinaria vas a cumplir hoy?</span></p>
         <form v-on:submit.prevent="noop">
-          <input class="applogin_input_login" type="text" v-model="email" placeholder="Codigo de Usuario">
+          <input class="applogin_input_login" type="text" v-model="email" placeholder="| Codigo de Usuario">
           <a href="" class="applogin_a">Otras formas de ingreso</a>
 
-          <input class="applogin_input_login" type="password" v-model="password" v-on:keyup.enter="login" placeholder="Pín de Elite">
+          <input class="applogin_input_login" type="password" v-model="password" v-on:keyup.enter="login" placeholder="| Pín de Elite">
           <a href="" class="applogin_a">Olvide mi contraseña</a>
 
           <p class="applogin_p resaltador" style="text-transform: uppercase; border-bottom:1px solid #FFE045;">Ir directo a:</p>
@@ -36,9 +36,7 @@
 
         <p class="applogin_p">Somos una comunidad comprometida con crear un mundo más amoroso, justo y poderoso.<br>
         <span class="resaltador">¿Listo para crear metas extraordínarias</span></p>
-
-        <div class="applogin_btn_div">
-          <button type="button" class="applogin_btn_login">Iniciar mi Entrenamiento</button>
+        <button type="button" class="applogin_btn_login">Iniciar mi Entrenamiento</button>
         </div>
       </div>
     </div>
@@ -78,6 +76,10 @@ body{
 .applogin_col_sec {
   margin: 10px;
   max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: 2px solid #00FF00;
 }
 
@@ -147,15 +149,16 @@ body{
     background: #f7931e !important;
 }
 
-.applogin_a, .applogin_a:active, .applogin_a:visited {
+.applogin_a,
+.applogin_a:active,
+.applogin_a:visited {
     font-size: 14px;
     text-decoration: underline;
     color:#FFF;
-    margin: 4px auto 4px 20px;
+    margin: 4px auto 4px 22px;
 }
 
 .applogin_a:hover {
-    color:#FFF;
     text-decoration: none;
 }
 
@@ -175,6 +178,19 @@ body{
     text-align: center;
     margin: 5px auto;
     text-transform: uppercase;
+}
+
+.applogin_col_sec .applogin_col_sec_last {
+  background: rgba(26 , 26 , 26 , 0.8);
+  border-radius: 200px;
+  padding: 10px 40px;
+}
+
+.applogin_col_sec .applogin_col_sec_last .applogin_btn_login {
+  display: block;
+  margin: 10px auto;
+  width: auto;
+
 }
 
 </style>

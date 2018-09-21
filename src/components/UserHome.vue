@@ -3,68 +3,69 @@
 <div id="wrapper-user">
     <!-- Única fila -->
 
-    
     <userInformation></userInformation><!-- Primer col -->
 
-    <div class="column-2-user"><!-- Segunda col -->
+    <div class="container_2"><!-- Segunda col -->
+      <div class="column-2-user">
+
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#menu1"><!--Cap-->Mi Viaje<!--/Cap--></a>
+                    <a class="nav-link active" data-toggle="tab" href="#menu1">Mi Viaje</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu3">Cronograma</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#menu2">Equipo</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu3">Cronograma</a>  
-                </li>
             </ul>
+
             <div class="tab-content">
-                <div id="menu1" class="container tab-pane active"><br>
+                <div id="menu1" class="container tab-pane active">
                     <h3>COACHING DIGITAL</h3>
                     <ul>
-                        <li> <p>Hábitos para el éxito</p>
+                        <li>Hábitos para el éxito
                         </li>
-                        <li> <p>Consejos</p>
+                        <li>Consejos
                         </li>
-                        <li> <p>Organizacion</p>
+                        <li>Organizacion
                         </li>
-                        <li> <p>Recordatorios de entrenamiento</p>
+                        <li>Recordatorios de entrenamiento
                         </li>
                     </ul>
-            
+
                 </div>
+
                 <div id="menu2" class="container tab-pane">
-                    
                     <h3>Equipo</h3>
                     <p>Pronto podras ver toda la informacion de tu equipo </p>
                 </div>
-                <div id="menu3" class="container tab-pane"><br>
-                
+
+                <div id="menu3" class="container tab-pane">
                     <h3>Cronograma</h3>
                     <p>Pronto podras ver tu cronograma de actividades</p>
                 </div>
-            
             </div>
-        </div><!-- Segunda col -->
 
-        <div class="column-3-user"><!-- Tercera col -->
-            <div class="container block" style="background-color: #1A1A1A;">
-                <h4 style="color:#fff; padding: 10px 0;">Metas y compromisos</h4>    
-            </div>
-        </div><!-- Tercera col -->
+        </div>
+      </div><!-- .\Segunda col -->
 
-        <div class="column-4-user"><!-- Cuarta col -->
+      <div class="container_3"><!-- Tercera col -->
+        <h6 class="column_3_titulo">Metas y compromisos</h6>
+        <div class="column-3-user">
+          <h6 class="column_3_subtitulo">Proximamente:</h6>
+          <p class="column_3_p">Recordatorios de <span class="column_3_em">Metas,<br> compromisos, tareas.</span></p>
+        </div>
+      </div><!-- .\Tercera col -->
 
-            <h4>Relaciones</h4>
+      <div class="container_4"><!-- Cuarta col -->
+
+            <h5 class="column_4_titulo">Relaciones</h5>
+
 
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">First item</a>
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Second item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
@@ -91,17 +92,24 @@ body {
 
 #wrapper-user {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-areas: "col_1 col_2 col_3 col_4";
     grid-gap: 20px;
-    padding: 20px 0 0 0;
+    padding: 20px 20px 0 20px;
+}
+
+.container_2 {
+  grid-area: col_2;
+  width: calc((100vw - 100px)/11 * 4);
 }
 
 .column-2-user {
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 1;
+  border-radius: 15px;
     background: #FFF;
+}
+
+.column-2-user .nav {
+  margin: 0 auto;
+  padding-left: 30px;
 }
 
 #grid-II-user {
@@ -151,32 +159,65 @@ body {
     color: #777;
 }
 
-.column-3-user {
-    grid-column-start: 7;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    background: #FFF;
-}
-.column-3-user > table > tbody > tr > td > h6 {
-    color: #FBB829;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-top: 5px;
-}
-.column-3-user > table > tbody > tr > td > a {
-    color: #777;
+.container_3 {
+  grid-area: col_3;
+  width: calc((100vw - 100px)/11 * 3);
 }
 
-.column-4-user {
-    grid-column-start: 10;
-    grid-column-end: 12;
-    grid-row-start: 1;
+.column-3-user {
+    background: #FFF;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #333;
 }
+
+.column_3_titulo {
+  text-transform: uppercase;
+  background: #000;
+  margin: 0;
+  padding: 14px;
+  border-radius: 15px 15px 0 0;
+  color: #FFF;
+}
+
+.column-3-user .column_3_subtitulo {
+  margin: 60px 0 0 0;
+}
+
+.column-3-user .column_3_p {
+  text-align: center;
+  margin: 5px auto 60px auto;
+}
+
+.column-3-user .column_3_p .column_3_em {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container_4 {
+  grid-area: col_4;
+  width: calc((100vw - 100px)/11 * 2);
+}
+
+.column_4_titulo {
+  background: #e6e6e6;
+  border-radius: 15px 15px 0 0;
+  margin: 0;
+  padding: 14px;
+  border-radius: 15px 15px 0 0;
+  color: #1a1a1a;
+}
+
 
 
 #sub-menu1{
     padding: 0px;
 }
+
 #sub-menu2{
     padding: 0px;
 }
@@ -192,6 +233,6 @@ export default {
   components:{
     userInformation
   }
-   
+
 }
 </script>
