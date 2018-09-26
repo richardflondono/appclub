@@ -21,15 +21,19 @@
             </ul>
 
             <div class="tab-content">
-
                 <div id="menu1" class="container tab-pane active">
-                    <h5 class="column_2_titulo">COACHING DIGITAL</h5>
-                    <ul class="column_2_content">
-                        <li class="column_2_elem">Hábitos para el éxito</li>
-                        <li class="column_2_elem">Consejos</li>
-                        <li class="column_2_elem">Organizacion</li>
-                        <li class="column_2_elem">Recordatorios de entrenamiento</li>
+                    <h3>COACHING DIGITAL</h3>
+                    <ul>
+                        <li>Hábitos para el éxito
+                        </li>
+                        <li>Consejos
+                        </li>
+                        <li>Organizacion
+                        </li>
+                        <li>Recordatorios de entrenamiento
+                        </li>
                     </ul>
+
                 </div>
 
                 <div id="menu2" class="container tab-pane">
@@ -41,7 +45,6 @@
                     <h3>Cronograma</h3>
                     <p>Pronto podras ver tu cronograma de actividades</p>
                 </div>
-
             </div>
 
         </div>
@@ -60,65 +63,17 @@
             <h5 class="column_4_titulo">Relaciones</h5>
 
 
-            <div class="column_4_links">
-                <span class="column_4_txt">Frecuente</span>
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Tom Herman
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
-
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Mike Herman
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
-
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Ali Cruise
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
-                <hr class="column_4_separador">
-
-                <span class="column_4_txt">Reciente</span>
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Tom Herman
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
-
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Mike Herman
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
-
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Ali Cruise
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
-                <hr class="column_4_separador">
-
-                <span class="column_4_txt">Promoción Elite</span>
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Tom Herman
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
-
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Mike Herman
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
-
-                <a href="#" class="column_4_anchor">
-                  <div class="column_4_anchor_user"><!--- Img Usuario --></div>
-                  Ali Cruise
-                  <div class="column_4_anchor_st"><!--- Est Usuario --></div>
-                </a>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">First item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Second item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Third item</a>
             </div>
 
     </div><!-- Cuarta col -->
@@ -152,29 +107,9 @@ body {
     background: #FFF;
 }
 
-.column-2-user .column_2_titulo {
-  text-transform: uppercase;
-  text-align: center;
-  color: #b3b3b3;
-  margin: 20px auto 4px auto;
-}
-
-.column-2-user .column_2_content {
-  text-transform: uppercase;
-  color: #ccc;
-  list-style: circle !important;
-  padding: 0 0 0 20px;
-  display: block;
-  margin: 0 20px;
-}
-
 .column-2-user .nav {
   margin: 0 auto;
   padding-left: 30px;
-}
-
-.column-2-user .nav .nav-link {
-  text-transform: uppercase;
 }
 
 #grid-II-user {
@@ -272,64 +207,12 @@ body {
   background: #e6e6e6;
   border-radius: 15px 15px 0 0;
   margin: 0;
-  padding: 8px 0;
+  padding: 14px;
   border-radius: 15px 15px 0 0;
   color: #1a1a1a;
-  font-weight: 600;
-  text-align: center;
 }
 
-.column_4_links {
-  background: #FFF;
-  border-radius: 0 0 15px 15px;
-  padding-bottom: 10px;
-}
 
-.column_4_links .column_4_anchor {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 26px;
-  color: #333;
-}
-
-.column_4_links .column_4_anchor:hover {
-  text-decoration: none;
-  color: #1a1a1a;
-  background: #e6e6e6;
-}
-
-.column_4_links .column_4_anchor .column_4_anchor_user {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background: no-repeat url(../assets/user_ic.png) center/cover;
-  margin: 0;
-}
-
-.column_4_links .column_4_anchor .column_4_anchor_st {
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  background: #FF0000;
-  margin: 0;
-}
-
-.column_4_links .column_4_txt {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 26px;
-  font-weight: 600;
-}
-
-.column_4_links .column_4_separador {
-  margin: 0 16px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 2px solid #ccc;
-}
 
 #sub-menu1{
     padding: 0px;
