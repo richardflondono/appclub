@@ -3,7 +3,6 @@
 <div id="wrapper-comunidad">
     <!-- Única fila -->
 
-    
     <comunidadInformation></comunidadInformation><!-- Primer col -->
 
     <div class="column-2-comunidad"><!-- Segunda col -->
@@ -27,10 +26,9 @@
 
             <!-- Contenido Tab Noticias -->
             <div class="tab-content">
-            <div id="menu1" class="container tab-pane active"><br>
+            <div id="menu1" class="container tab-pane active">
 
                         <div id="grid-II-comunidad">
-                        <div>
                             <div class="card text-center">
                             <div class="card-header">
                                 Noticias del Club
@@ -44,170 +42,31 @@
                                 2 days ago
                             </div>
                             </div>
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                           <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                      
-
+                            
                         </div>
 
                 </div>
-            
+
             <!-- Contenido Tab Eventos -->
-            <div id="menu2" class="container tab-pane"><br>
+            <div id="menu2" class="container tab-pane">
                 <h3>Eventos</h3>
                 <p>Pronto encontraras información acerca de tus Eventos</p>
             </div>
 
             <!-- Contenido Tab Socios -->
-            <div id="menu3" class="container tab-pane"><br>
+            <div id="menu3" class="container tab-pane">
                 <h3>Socios</h3>
                 <p>Pronto encontraras información acerca de tus Socios</p>
             </div>
 
             <!-- Contenido Tab Beneficios -->
-            <div id="menu4" class="container tab-pane"><br>
+            <div id="menu4" class="container tab-pane">
                 <h3>Beneficios</h3>
                 <p>Pronto encontraras información acerca de tus Beneficios</p>
             </div>
 
             <!--Contenido Tab Mapa -->
-            <div id="menu5" class="container tab-pane"><br>
+            <div id="menu5" class="container tab-pane">
                 <h3>Mapa</h3>
                 <p>Pronto podras ver el mapa de tu ciudad </p>
              </div>
@@ -229,37 +88,9 @@
                                 2 days ago
                             </div>
                             </div>
-                             <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-                             <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
 
 
     </div><!-- Tercera col -->
-
-    
 
     <!-- Única fila -->
     </div>
@@ -280,8 +111,6 @@ body {
     grid-gap: 20px;
     padding: 20px 0;
 }
-
-
 
 .column-2-comunidad {
     grid-column-start: 3;

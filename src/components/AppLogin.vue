@@ -126,7 +126,7 @@ body{
 .applogin_btn_div .applogin_btn_login {
   height: 170px;
   width: calc(100%/2 - 2px);
-  background: no-repeat url(../assets/nav_casa_ic.png) center, #FBB829;
+  background: no-repeat url(../assets/home_login_ic.png) center, #FBB829;
   padding: 100px 0 0 0 !important;
   margin: 0 4px 0 0 !important;
 }

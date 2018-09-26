@@ -1,104 +1,125 @@
 <template>
-    <div class="column-1"><!-- Primer col -->
- <!--<span>{{loggedUser.rol}}</span>-->
+  <div class="container_1"><!-- Primer col -->
+   <div class="userinfo-1">
 
-        <div>
-            <img src="../../assets/profile.jpeg">
 
-            <p class="nombre_us">{{loggedUser.fName}} {{loggedUser.lName}}</p>
-            
-            
-            <ul>
-                <li><strong>Status: {{loggedUser.rol}}</strong></li>
-                <li>Estadisticas</li>
-                <li>Socios</li>
-                <li>Empresas</li>
-                <li>Entrenadores</li>
-                <li>Configuracion</li>
-                <li>Seguridad</li>
-            </ul>
-        </div>
+     <div class="userinfo_cont_img">
+       <!-- Imagen de usuario -->
+     </div>
+
+     <p class="nombre_us">{{loggedUser.fName}} {{loggedUser.lName}}</p>
+
+     <ul class="userinfo_datos">
+         <li class="userinfo_datos_elem">
+           Status: {{loggedUser.rol}}
+         </li>
+         <li class="userinfo_datos_elem">
+           <a class="userinfo_datos_elem_a" href="#">Estadisticas</a>
+         </li>
+         <li class="userinfo_datos_elem">
+           <a class="userinfo_datos_elem_a" href="#">Socios</a>
+         </li>
+         <li class="userinfo_datos_elem">
+           <a class="userinfo_datos_elem_a" href="#">Empresas</a>
+         </li>
+         <li class="userinfo_datos_elem">
+           <a class="userinfo_datos_elem_a" href="#">Entrenadores</a>
+         </li>
+         <li class="userinfo_datos_elem">
+           <a class="userinfo_datos_elem_a" href="#">Configuracion</a>
+         </li>
+         <li class="userinfo_datos_elem">
+           <a class="userinfo_datos_elem_a" href="#">Seguridad</a>
+         </li>
+         <li class="userinfo_datos_elem">
+           <a class="userinfo_datos_elem_a" href="#" v-on:click="logout">Salir</a>
+         </li>
+     </ul>
+
+
     <div>
-        <div class="content">
-            <h4 class="center" style="color: #000; font-family:  bebas;">¡Ahora somos más!</h4>
-            <div class="content  center" style="border:0px">
-                <p>865</p>
-            </div>
-            <h4 class="center" style="color:#000;">Usuarios</h4>
-
-            <p class="center" style="color: #808080">"Tu contribución permite que esta comunidad siga creciendo"
-            </p>
-            <h4 class="center" style="color: #FBB829; font-family:  bebas;">¡Vamos por el mundo!</h4>
-        </div>
-
+      <h4>¡Ahora somos más!</h4>
+      <p>
+        <span>8</span>
+        <span>6</span>
+        <span>5</span>
+        <span><!--- Multiplicador --></span>
+      </p>
+      <h4>Usuarios</h4>
+      <p>
+        Tu contribución permite que esta comunidad siga creciendo
+      </p>
+      <h4>¡Vamos por el mundo!</h4>
     </div>
 
-</div>    
+  </div>
+</div>
 </template>
 
 <style>
 
-.column-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
+.container_1 {
+  grid-area: col_1;
+  width: calc((100vw - 100px)/11 * 2);
+}
+
+.userinfo-1 {
+  padding: 10px 0;
     background: #4D4D4D;
     color: #E6E6E6;
     font-size: 18px;
+    border-radius: 15px;
 }
 
-
-
-.column-1 img {
-    margin: 10px auto;
-    width: 100%;
+.userinfo-1 .userinfo_cont_img {
+  border-radius: 100px;
+  border: 1px solid #333;
+  margin: 10px auto;
+  width: 170px;
+  height: 170px;
+  background: no-repeat url(../../assets/profile.jpeg) center/cover;
+  box-shadow: 3px 3px 6px -1px #333;
 }
 
-.column-1 p {
-    padding: 0 24px;
-    margin: 10px auto;
-    line-height: 16pt;
+.userinfo-1 .nombre_us {
+  margin: 5px auto;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fbb829;
+  border-bottom: 2px solid #AAACB2;
 }
 
-.nombre_us {
-    text-transform: uppercase;
-    color: #FBB829;
-    font-weight: 700;
-    font-size: 18px;
+.userinfo-1 .userinfo_datos {
+  list-style: none;
+  padding: 0;
+  display: block;
+  margin: 10px 20px;
 }
 
-.column-1 p strong {
-    font-weight: 700;
+.userinfo-1 .userinfo_datos .userinfo_datos_elem {
+  /** Empty **/
 }
 
-.column-1 ul {
-    width: 70%;
-    margin: 20px auto;
+.userinfo-1 .userinfo_datos .userinfo_datos_elem:first-child {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-left: 10px;
+  font-weight: 800;
 }
 
-.column-1 ul li {
-    margin: 3px auto;
+.userinfo-1 .userinfo_datos .userinfo_datos_elem .userinfo_datos_elem_a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  padding: 2px 8px;
+  border-left: 2px solid #fbb829;
 }
 
-.column-1 span {
-    font: 40px 'Fjalla One', Arial, sans-serif;
-    display: block;
-    color: #1A1A1A;
-    padding: 30px 0;
-    text-transform: uppercase;
-    text-align: center;
-    background: #FBB829;
-}
-
-.column-1 div {
-    display: block;
-    margin: 12px;
-    padding: 10px;
-    border: 1px solid #808080;
-}
-ul {
-    padding: 0;
-    list-style-type: none;
+.userinfo-1 .userinfo_datos .userinfo_datos_elem .userinfo_datos_elem_a:hover {
+  color: #fbb829;
+  border-left-color: #fff;
 }
 </style>
 
@@ -110,7 +131,7 @@ let userRef = database.ref('user/')
 
 export default {
     name:'ComunidadInformation',
-    
+
     data(){
         return {
       loggedUser:{
@@ -142,7 +163,7 @@ export default {
     }
   },
   methods:{
-      
+
     },
     created(){
     var este = this;

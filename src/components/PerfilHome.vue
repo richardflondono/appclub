@@ -6,95 +6,35 @@
     <div class="column-1-perfil"><!-- Primer col -->
 
             <div class="row">
-            
-            <img id="img_perfil" style="float: left;width: 5  i{}j0%;margin-right: 10px;border: 1px solid #797B7F;" src="../assets/team_pic.png">
-           
-            <h6 style="color: #FBB829;text-transform: uppercase;font-size: 20px;">NOMBRE DEL EQUIPO</h6>
+            <img id="img_perfil" src="../assets/team_pic.png">
+
+            <h6>NOMBRE DEL EQUIPO</h6>
             <span>Cali Colombia</span>
             <p>Elite #</p>
-            <p style="color: #777;font-size: 15px;">Vision: <br>Lorem ipsum dolor sit amet, co nsectetuer adispiscing elit, minim veniam quis nostrud exercitation<br>
-            Legado: <br>Lorem ipsum dolor sit amet, co nsectetuer adispiscing elit, minim veniam quis nostrud exercitation
+            <p style="color: #777;font-size: 15px;"><!-- Tal vez sea mejor una lista de definición -->
+              Vision:
+              <br>Lorem ipsum dolor sit amet, co nsectetuer adispiscing elit, minim veniam quis nostrud exercitation
+              <br>Legado:
+              <br>Lorem ipsum dolor sit amet, co nsectetuer adispiscing elit, minim veniam quis nostrud exercitation
             </p>
-            
+
             </div>
+
             <div class="content">
-                            <div id="grid-II-perfil">
-                                    
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
+              <div>
+                <img class="img-fluid w-100" src="../assets/user_image.png">
+              </div>
 
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-                                    
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-                                      <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid w-100" src="../assets/user_image.png">
-                                    </div>
-
-                                </div>
+              <div>
+                <img class="img-fluid w-100" src="../assets/user_image.png">
+              </div>
             </div>
     </div><!-- Primer col -->
 
     <div class="column-2-perfil"><!-- Segunda col -->
         <div class="container" style="background-color: #1A1A1A;">
-            <p style="color: #fff;text-align: center">Proximamente:</p>
-            <p style="color: #fff;text-align: center">Tu contrato de vida y metas diarias.</p>
+            <p>Proximamente:</p>
+            <p>Tu contrato de vida y metas diarias.</p>
         </div>
             <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
@@ -109,37 +49,32 @@
             <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#menu4">Empresas</a>
             </li>
-            
+
             </ul>
             <div class="tab-content">
             <div id="menu1" class="container tab-pane active"><br>
             <div class="row">
             <div class="container" style="background: #333333; padding: 0px 0px 0px 0px">
-                <span>
-                    <img src="../assets/user_pic.png" style="float: left;">
-                    <h4 style="color: #FBB829; padding: 5px 5px 5px 5px;">¿Quien es Nombre de Usuario?</h4>
-                    <p style="padding: 5px 5px 5px 5px;">Nos encantaria conocerte un poco más. Cuéntanos un poco sobre que posibilidades extraordinaria eres hoy.</p>
-                    <p style="padding: 5px 5px 5px 5px;">Recuerda actualizarnos tu visión cada tanto, en la comunidad estaremos encantados de saber más sobre ti. ¡Así que mantenos al tanto!</p>
-                </span>
+              <img src="../assets/user_pic.png">
+              <h4 style="color: #FBB829; padding: 5px 5px 5px 5px;">¿Quien es Nombre de Usuario?</h4>
+              <p>Nos encantaria conocerte un poco más. Cuéntanos un poco sobre que posibilidades extraordinaria eres hoy.</p>
+              <p>Recuerda actualizarnos tu visión cada tanto, en la comunidad estaremos encantados de saber más sobre ti. ¡Así que mantenos al tanto!</p>
             </div>
             </div>
+
             <div class="row">
                 <div class="col-sm-6">
-                    <h4 style="color: #FBB829;">Contacto</h4><hr>
-                    
+                    <h4>Contacto</h4>
+
                     <p>correoElectronico@gmail.com</p>
                     <p>3153334444</p>
                     <p>Agregar otro telefono</p>
                     <p>Cuenta de Facebook</p>
                     <p>Agregar otro teléfono</p>
-                   <!--<input placeholder="">
-                    <input placeholder="">
-                    <input placeholder="">
-                    <input placeholder="">
-                    <input placeholder="">  -->
                 </div>
                 <div class="col-sm-6">
-                    <h4 style="color: #FBB829;">Personal</h4><hr>
+                    <h4 style="color: #FBB829;">Personal</h4>
+
                     <p>calle 00 # 00 A - 00 A, apto 520</p>
                     <p>88888888</p>
                     <p>Cali, Colombia</p>
@@ -148,30 +83,33 @@
                 </div>
             </div>
             </div>
+
             <div id="menu2" class="container tab-pane">
                 <h3>Logros</h3>
                 <p>pronto podras ver tus logros en esta sección</p>
 
-                
             </div>
-            <div id="menu3" class="container tab-pane"><br>
+
+            <div id="menu3" class="container tab-pane">
                 <h3>Portafolio</h3>
                 <p>pronto podras ver tu portafolio en esta sección</p>
             </div>
-            <div id="menu4" class="container tab-pane"><br>
+
+            <div id="menu4" class="container tab-pane">
                 <h3>Empresas</h3>
                 <p>pronto podras ver tus empresas en esta sección</p>
             </div>
+
             </div>
         </div><!-- Segunda col -->
 
     <div class="column-3-perfil"><!-- Tercera col -->
         <div class="container" style="background-color: #1A1A1A;">
         <p style="color: #fff; padding: 15px 10px" >NOTICIAS DE LA COMUNIDAD</p>
-        </div>    
+        </div>
     </div><!-- Tercera col -->
 
-  
+
 
     <!-- Única fila -->
     </div>
@@ -329,7 +267,7 @@ body {
 
 /* estilos para responsive en mi perfil  */
 @media only screen and (max-width: 1025px) {
-    
+
     #img_perfil {
         width: 100%;
     }

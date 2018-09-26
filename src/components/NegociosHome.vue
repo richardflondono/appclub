@@ -3,7 +3,7 @@
 <div id="wrapper-negocios">
     <!-- Única fila -->
 
-    
+
     <userInformation></userInformation><!-- Primer col -->
 
     <div class="column-2-negocios"><!-- Segunda col -->
@@ -33,7 +33,7 @@
 
             <!-- Contenido Tab Noticias -->
             <div class="tab-content">
-            <div id="menu1" class="container tab-pane active"><br>
+            <div id="menu1" class="container tab-pane active">
 
                         <div id="grid-II-negocios">
                         <div>
@@ -44,7 +44,7 @@
                             <div class="card-body">
                                 <img src="../assets/team.jpg">
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
+
                             </div>
                             <div class="card-footer text-muted">
                                 2 days ago
@@ -60,7 +60,7 @@
                             <div class="card-body">
                                 <img src="../assets/team.jpg">
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                               
+
                             </div>
                             <div class="card-footer text-muted">
                                 2 days ago
@@ -69,169 +69,50 @@
 
                         </div>
 
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Nombre de la Galeria
-                            </div>
-                            <div class="card-body">
-                                <img src="../assets/team.jpg">
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
 
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Nombre de la Empresa
-                            </div>
-                            <div class="card-body">
-                                <img src="../assets/team.jpg">
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Nombre del Servicio
-                            </div>
-                            <div class="card-body">
-                                <img src="../assets/team.jpg">
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Nombre del Producto
-                            </div>
-                            <div class="card-body">
-                                <img src="../assets/team.jpg">
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Nombre de Oferta
-                            </div>
-                            <div class="card-body">
-                                <img src="../assets/team.jpg">
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                           <div class="card text-center">
-                            <div class="card-header">
-                                Nombre de Cine
-                            </div>
-                            <div class="card-body">
-                                <img src="../assets/team.jpg">
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                               
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="card text-center">
-                            <div class="card-header">
-                                Nombre del Sorteo
-                            </div>
-                            <div class="card-body">
-                                <img src="../assets/team.jpg">
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
-
-                        </div>
-
-                      
 
                         </div>
 
                 </div>
-            
+
             <!-- Contenido Tab Eventos -->
-            <div id="menu2" class="container tab-pane"><br>
+            <div id="menu2" class="container tab-pane">
                 <h3>Cronograma</h3>
                 <p>Pronto podras ver tu cronograma</p>
             </div>
 
             <!-- Contenido Tab Socios -->
-            <div id="menu3" class="container tab-pane"><br>
+            <div id="menu3" class="container tab-pane">
                 <h3>Empresas</h3>
                 <p>Pronto podras ver la infomación de tus empresas</p>
             </div>
 
             <!-- Contenido Tab Beneficios -->
-            <div id="menu4" class="container tab-pane"><br>
+            <div id="menu4" class="container tab-pane">
                 <h3>Starters</h3>
                 <p>Pronto tendras mas infomación acerca de los Starters</p>
             </div>
 
             <!--Contenido Tab Mapa -->
-            <div id="menu5" class="container tab-pane"><br>
+            <div id="menu5" class="container tab-pane">
                 <h3>Negocios</h3>
                 <p>Pronto tendras mas infomación acerca de los Negocios</p>
             </div>
 
             <!--Contenido Tab Mapa -->
-            <div id="menu6" class="container tab-pane"><br>
+            <div id="menu6" class="container tab-pane">
                 <h3>Beneficios</h3>
                 <p>Pronto tendras mas infomación acerca de tus Beneficios</p>
 
              </div>
 
             <!--Contenido Tab Mapa -->
-            <div id="menu7" class="container tab-pane"><br>
+            <div id="menu7" class="container tab-pane">
                 <h3>Mapa</h3>
                 <p>Pronto podras ver el mapa de tu ciudad </p>
             </div>
 
-            
+
 
             </div>
         </div><!-- Segunda col -->
@@ -241,24 +122,11 @@
                             <div class="card-header">Nombre del servicio</div>
                             <div class="card-body">
                                 <h5 class="card-title">$4'750.000</h5>
-                            
+
                                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                             </div>
-                            
-                             <div class="card text-center">
-                            <div class="card-header">
-                                Noticias del Club
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
-                            </div>
+
                              <div class="card text-center">
                             <div class="card-header">
                                 Noticias del Club
@@ -276,7 +144,7 @@
 
     </div><!-- Tercera col -->
 
-    
+
 
     <!-- Única fila -->
     </div>
@@ -382,7 +250,7 @@ import userInformation from'./usuario/UserInformation'
 let userRef = database.ref('user/')
 
 
-   
+
 
 export default {
   name:'negocios-home',
