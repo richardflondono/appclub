@@ -216,14 +216,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border: 1px solid #FFF;
 }
 
 .navbar_user_opt .navbar_user_opt_anchor {
   display: inline-block;
   margin: 0 5px 0 0;
   padding: 14px 8px 0 8px;
-  border: 1px solid #FFF;
   height: 60px;
   min-width: 100px;
   font-size: 12px;
