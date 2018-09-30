@@ -156,15 +156,15 @@ export default {
   },
   methods:{
     agregarUsuario() {
-      console.log(this.newUser);
-      console.log(this.newUser.email);
-      console.log(this.newUser.password);
+      //console.log(this.newUser);
+      //console.log(this.newUser.email);
+      //console.log(this.newUser.password);
       this.newUser.password = this.newUser.document;
         firebase.auth().createUserWithEmailAndPassword(this.newUser.email, this.newUser.password)
         .then(user => {
             alert('usuario creado correctamente')
         
-      console.log(this.newUser);
+      //console.log(this.newUser);
       userRef.push(this.newUser);
       this.newUser.fName='' ,
       this.newUser.lName='' ,
