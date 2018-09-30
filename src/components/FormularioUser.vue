@@ -1,13 +1,11 @@
 <template>
+
+  <div class="col-sm-12">
     <form @submit.prevent="agregarUsuario">
-        <div class="col-sm-12 tamaño">
-                <div class="container" style="background-color: #ffffff">
-            <div class="form-group">
-                    <table class="table table-borderless menu1">
-            <tbody>
+
             <!--tr>
                 <td style="color: #FBB829">Foto de Perfil:</td>
-                <td> 
+                <td>
                     <button raised class="btn" @click="onPickFile"> Cargar Imagen </button>
                     <input
                     type="file"
@@ -17,100 +15,93 @@
                     accept="image/*"
                     @change="onFilePicked"></td>
             </tr-->
-            <tr>
-                
-                <td style="color: #FBB829">Nombre:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.fName" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-
-                <td style="color: #FBB829">Apellidos:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.lName" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">Escarapela:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.nickname" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">E-mail:</td>
-                <td><input type="email"  class="form-control form-control borde" v-model="newUser.email" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">Cédula:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.document" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">País:</td>
-                <td><div class="form-group">
-                <select class="form-control borde" v-model="newUser.country" id="sel1">
-                    <option>Elegir</option>
-                    <option>Colombia</option>
-                </select>
-                </div></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">Ciudad:</td>
-                <td><div class="form-group">
-                <select class="form-control borde" v-model="newUser.city" id="sel1">
-                    <option>Elegir</option>
-                    <option>Cali</option>
-                    <option>Bogota</option>
-                </select>
-                </div></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">Celular:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.phone" placeholder="Agregar"></td>
-            </tr>
-
-            <tr>
-                <td style="color: #FBB829">Género:</td>
-                <td>
-                    <div class="form-group">
-                        <select class="form-control borde" v-model="newUser.gender" id="sel1">
-                        <option>Elegir</option>
-                        <option>Masculino</option>
-                        <option>Femenino</option>
-                        </select>
-                    </div>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="color: #FBB829">Alimentación:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.rAlimenticias" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">Cuidados:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.cEspeciales" placeholder="Agregar"></td>
-            </tr>
-            <tr>
-                <td style="color: #FBB829">Ángel:</td>
-                <td><input type="text" class="form-control form-control borde" v-model="newUser.angel" placeholder="Agregar"></td>
-            </tr>
-            
-            <tr>
-                <td style="color: #FBB829">Rol:</td>
-                <td>
-                    <div class="form-group">
-                    <select class="form-control borde" v-model="newUser.rol" id="sel1">
-                        <option>Elegir</option>
-                        <option value="ADMIN">Administrador</option>
-                        <option value="USER">Usuario</option>
-                    </select>
-                    </div>
-                </td>
-            </tr>
-
-            </tbody>
-        </table>
-        <hr>
-            
-            <button type="submit" class="btn btn-warning btn-block">Registrar</button>
+            <div>
+                <span>Nombre:</span>
+                <input type="text" class="form-control form-control borde" v-model="newUser.fName" placeholder="Nombre">
             </div>
-        </div>
+
+            <div>
+                <span>Apellidos:</span>
+                <input type="text" class="form-control form-control borde" v-model="newUser.lName" placeholder="Apellidos">
+            </div>
+
+            <div>
+                <span>Escarapela:</span>
+                <input type="text" class="form-control form-control borde" v-model="newUser.nickname" placeholder="Escarapela">
+            </div>
+
+            <div>
+                <span>E-mail:</span>
+                <input type="email"  class="form-control form-control borde" v-model="newUser.email" placeholder="E-mail">
+            </div>
+
+            <div>
+                <span>Cédula:</span>
+                <input type="text" class="form-control form-control borde" v-model="newUser.document" placeholder="Cédula">
+            </div>
+
+            <div>
+                <span>País:</span>
+                <select class="form-control borde" v-model="newUser.country" id="sel1">
+                    <option selected>Colombia</option>
+                    <option>Puerto Rico</option>
+                    <option>El Salvador</option>
+                    <option>Honduras</option>
+                </select>
+            </div>
+
+            <div>
+                <span>Ciudad:</span>
+                <select class="form-control borde" v-model="newUser.city" id="sel1">
+                    <option selected>Cali</option>
+                    <option>Bogota</option>
+                    <option>Medellín</option>
+                </select>
+            </div>
+
+            <div>
+                <span>Celular:</span>
+                <input type="text" class="form-control form-control borde" v-model="newUser.phone" placeholder="Celular">
+            </div>
+
+            <div>
+                <span>Género:</span>
+                <select class="form-control borde" v-model="newUser.gender" id="sel1">
+                  <option selected>Masculino</option>
+                  <option>Femenino</option>
+                </select>
+            </div>
+
+            <div>
+                <span>Alimentación:</span>
+                <input type="text" class="form-control form-control borde" v-model="newUser.rAlimenticias" placeholder="Alimentación">
+            </div>
+
+            <div>
+                <span>Cuidados:</span>
+                <input type="text" class="form-control form-control borde" v-model="newUser.cEspeciales" placeholder="Cuidados">
+            </div>
+
+            <div>
+                <span>Ángel:</span>
+                <input type="text" class="form-control form-control borde" v-model="newUser.angel" placeholder="Ángel">
+            </div>
+
+            <div>
+                <span>Rol:</span>
+                <select class="form-control borde" v-model="newUser.rol" id="sel1">
+                  <option value="USER" selected>Usuario</option>
+                  <option value="ADMIN">Administrador</option>
+                </select>
+            </div>
+
+        <hr>
+
+            <button type="submit" class="btn btn-warning btn-block">Registrar</button>
+
+        </form>
     </div>
-</form>
+
 </template>
 
 
@@ -156,15 +147,15 @@ export default {
   },
   methods:{
     agregarUsuario() {
-      //console.log(this.newUser);
-      //console.log(this.newUser.email);
-      //console.log(this.newUser.password);
+      console.log(this.newUser);
+      console.log(this.newUser.email);
+      console.log(this.newUser.password);
       this.newUser.password = this.newUser.document;
         firebase.auth().createUserWithEmailAndPassword(this.newUser.email, this.newUser.password)
         .then(user => {
             alert('usuario creado correctamente')
-        
-      //console.log(this.newUser);
+
+      console.log(this.newUser);
       userRef.push(this.newUser);
       this.newUser.fName='' ,
       this.newUser.lName='' ,
@@ -195,7 +186,7 @@ export default {
     },
     createUser(){
         if(!this.formIsValid){
-            
+
         }
     },
     onPickFile(){
@@ -227,4 +218,3 @@ export default {
     color: #1A1A1A
 }
 </style>
-

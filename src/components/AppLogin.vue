@@ -13,7 +13,7 @@
           <input class="applogin_input_login" type="password" v-model="password" v-on:keyup.enter="login" placeholder="| Pín de Elite">
           <a href="" class="applogin_a">Olvide mi contraseña</a>
 
-          <p class="applogin_p resaltador" style="text-transform: uppercase; border-bottom:1px solid #FFE045;">Ir directo a:</p>
+          <p class="applogin_p resaltador upper">Ir directo a:</p>
 
           <div class="applogin_btn_div">
             <button type="button" v-on:click="login" class="applogin_btn_login">Inicio</button>
@@ -170,6 +170,11 @@ body{
 
 .resaltador {
     color: #FBB829;
+}
+
+.upper {
+  text-transform: uppercase;
+  border-bottom: 1px solid #FFE045;
 }
 
 .applogin_titulo {
