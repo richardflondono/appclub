@@ -154,7 +154,7 @@
                                 </div>
 
                     
-                    </div>
+                        </div>
                     
                     <div id="sub-menu2" class="container tab-pane">
                         <h3>Crear Nuevo</h3>
@@ -389,301 +389,301 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro');
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro");
 
 body {
-    font-family: 'Source Sans Pro', Arial, sans-serif;
-    background: #AAACB2;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  background: #aaacb2;
 }
 
 #wrapper_admin {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
-    padding: 20px 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  padding: 20px 0;
 }
 .column-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    background: #4D4D4D;
-    color: #E6E6E6;
-    font-size: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  background: #4d4d4d;
+  color: #e6e6e6;
+  font-size: 20px;
 }
 
 .column-1 img {
-    margin: 10px auto;
-    width: 70%;
+  margin: 10px auto;
+  width: 70%;
 }
 
 .column-1 p {
-    padding: 0 24px;
-    margin: 10px auto;
-    line-height: 16pt;
+  padding: 0 24px;
+  margin: 10px auto;
+  line-height: 16pt;
 }
 
 .column-1 p em {
-    text-transform: uppercase;
-    color: #FBB829;
-    font-weight: 700;
-    font-size: 18px;
+  text-transform: uppercase;
+  color: #fbb829;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .column-1 p strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .column-1 ul {
-    width: 70%;
-    margin: 20px auto;
+  width: 70%;
+  margin: 20px auto;
 }
 
 .column-1 ul li {
-    margin: 3px auto;
+  margin: 3px auto;
 }
 
 .column-1 span {
-    font: 40px 'Fjalla One', Arial, sans-serif;
-    display: block;
-    color: #1A1A1A;
-    padding: 30px 0;
-    text-transform: uppercase;
-    text-align: center;
-    background: #FBB829;
+  font: 40px "Fjalla One", Arial, sans-serif;
+  display: block;
+  color: #1a1a1a;
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+  background: #fbb829;
 }
 
 .column-1 div {
-    display: block;
-    margin: 12px;
-    padding: 10px;
-    border: 1px solid #808080;
+  display: block;
+  margin: 12px;
+  padding: 10px;
+  border: 1px solid #808080;
 }
 
 .column-2 {
-    grid-column-start: 3;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    background: #FFF;
+  grid-column-start: 3;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  background: #fff;
 }
 
 #grid-II {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: auto;
-    grid-gap: 8px;
-    padding: 0 8px 8px 8px;
-    height: 680px;
-    overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: auto;
+  grid-gap: 8px;
+  padding: 0 8px 8px 8px;
+  height: 680px;
+  overflow-y: scroll;
 }
 
 #grid-II > div {
-    padding: 14px;
-    border: 1px solid #797B7F;
+  padding: 14px;
+  border: 1px solid #797b7f;
 }
 
 #grid-II > div:hover {
-    background: #AAACB2;
+  background: #aaacb2;
 }
 
 #grid-II > :nth-of-type(2n + 1) {
-    grid-column: 1;
-    grid-row: auto;
+  grid-column: 1;
+  grid-row: auto;
 }
 
 #grid-II > :nth-of-type(2n) {
-    grid-column: 2;
-    grid-row: auto;
+  grid-column: 2;
+  grid-row: auto;
 }
 
 #grid-II > div img {
-    border: 1px solid #797B7F;
-    width: 50%;
-    margin-right: 10px;
-    float: left;
+  border: 1px solid #797b7f;
+  width: 50%;
+  margin-right: 10px;
+  float: left;
 }
 
 #grid-II > div h6 {
-    color: #FBB829;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-top: 5px;
+  color: #fbb829;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 5px;
 }
 
 #grid-II > div p {
-    color: #777;
+  color: #777;
 }
 
 .column-3 {
-    grid-column-start: 8;
-    grid-column-end: 11;
-    grid-row-start: 1;
-    background: #FFF;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  background: #fff;
 }
 .column-3 > table > tbody > tr > td > h6 {
-    color: #FBB829;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-top: 5px;
+  color: #fbb829;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 5px;
 }
 .column-3 > table > tbody > tr > td > a {
-    color: #777;
+  color: #777;
 }
 
 .column-4 {
-    grid-column-start: 11;
-    grid-column-end: 13;
-    grid-row-start: 1;
+  grid-column-start: 11;
+  grid-column-end: 13;
+  grid-row-start: 1;
 }
 
 .col-sm {
-    border: 1px solid #1A1A1A;
+  border: 1px solid #1a1a1a;
 }
-#sub-menu1{
-    padding: 0px;
+#sub-menu1 {
+  padding: 0px;
 }
-#sub-menu2{
-    padding: 0px;
+#sub-menu2 {
+  padding: 0px;
 }
-
 </style>
 
 <script>
-import formularioUser from'./FormularioUser'
-import userInformation from'./usuario/UserInformation'
-import {database} from './firebaseInit'
-import firebase from 'firebase'
+import formularioUser from "./FormularioUser";
+import userInformation from "./usuario/UserInformation";
+import { database } from "./firebaseInit";
+import firebase from "firebase";
 //import userDB from './userBD'
-let userRef = database.ref('user/')
+let userRef = database.ref("user/");
 
 export default {
-    name:'admin-home',
+  name: "admin-home",
 
-    firebase:{
-        usuarios: userRef
-    },
-    data(){
-        return {
-        newUser:{
-            fName:'' ,
-            lName:'' ,
-            nickname:'' ,
-            date:'' ,
-            phone:'' ,
-            document:'' ,
-            gender:'' ,
-            addres:'' ,
-            city:'' ,
-            country:'' ,
-            email:'' ,
-            password:'' ,
-            rol:'' ,
-            profesion:'' ,
-            description:'' ,
-            rAlimenticias:'' ,
-            cEspeciales:'' ,
-            sCuantico:'' ,
-            angel:'' ,
-            estatus:'' ,
-            imageUrl:'',
-            contrato:'',
-            image: null
-      },
-      loggedUser:{
-            fName:'' ,
-            lName:'' ,
-            nickname:'' ,
-            date:'' ,
-            phone:'' ,
-            document:'' ,
-            gender:'' ,
-            addres:'' ,
-            city:'' ,
-            country:'' ,
-            email:'' ,
-            password:'' ,
-            rol:'' ,
-            profesion:'' ,
-            description:'' ,
-            rAlimenticias:'' ,
-            cEspeciales:'' ,
-            sCuantico:'' ,
-            angel:'' ,
-            estatus:'' ,
-            imageUrl:'',
-            contrato:'',
-            image: null
-      }
-    }
+  firebase: {
+    usuarios: userRef
   },
-  methods:{
+  data() {
+    return {
+      newUser: {
+        fName: "",
+        lName: "",
+        nickname: "",
+        date: "",
+        phone: "",
+        document: "",
+        gender: "",
+        addres: "",
+        city: "",
+        country: "",
+        email: "",
+        password: "",
+        rol: "",
+        profesion: "",
+        description: "",
+        rAlimenticias: "",
+        cEspeciales: "",
+        sCuantico: "",
+        angel: "",
+        estatus: "",
+        imageUrl: "",
+        contrato: "",
+        image: null
+      },
+      loggedUser: {
+        fName: "",
+        lName: "",
+        nickname: "",
+        date: "",
+        phone: "",
+        document: "",
+        gender: "",
+        addres: "",
+        city: "",
+        country: "",
+        email: "",
+        password: "",
+        rol: "",
+        profesion: "",
+        description: "",
+        rAlimenticias: "",
+        cEspeciales: "",
+        sCuantico: "",
+        angel: "",
+        estatus: "",
+        imageUrl: "",
+        contrato: "",
+        image: null
+      }
+    };
+  },
+  methods: {
     agregarUsuario() {
       //userRef.push(this.newUser);
-            this.fName='' ,
-            this.lName='' ,
-            this.nickname='' ,
-            this.date='' ,
-            this.phone='' ,
-            this.document='' ,
-            this.gender='' ,
-            this.addres='' ,
-            this.city='' ,
-            this.country='' ,
-            this.email='' ,
-            this.password='' ,
-            this.rol='' ,
-            this.profesion='' ,
-            this.description='' ,
-            this.rAlimenticias='' ,
-            this.cEspeciales='' ,
-            this.sCuantico='' ,
-            this.angel='' ,
-            this.estatus='' ,
-            this.imageUrl='',
-            this.contrato='',
-            this.image= null
-      
+      (this.fName = ""),
+        (this.lName = ""),
+        (this.nickname = ""),
+        (this.date = ""),
+        (this.phone = ""),
+        (this.document = ""),
+        (this.gender = ""),
+        (this.addres = ""),
+        (this.city = ""),
+        (this.country = ""),
+        (this.email = ""),
+        (this.password = ""),
+        (this.rol = ""),
+        (this.profesion = ""),
+        (this.description = ""),
+        (this.rAlimenticias = ""),
+        (this.cEspeciales = ""),
+        (this.sCuantico = ""),
+        (this.angel = ""),
+        (this.estatus = ""),
+        (this.imageUrl = ""),
+        (this.contrato = ""),
+        (this.image = null);
     },
-    emitirEventoFormularioUser(){
-        this.$emit('formularioUser:change')
+    emitirEventoFormularioUser() {
+      this.$emit("formularioUser:change");
     },
-    createUser(){
-        if(!this.formIsValid){
-            
-        }
+    createUser() {
+      if (!this.formIsValid) {
+      }
     },
-    onPickFile(){
-        this.$refs.fileInput.click()
+    onPickFile() {
+      this.$refs.fileInput.click();
     },
-    onFilePicked(event){
-        const files = event.target.files
-        let filename = files[0].name;
-        if (filename.lastIndexOf('.') <= 0){
-            return alert('Please add a valid file')
-        }
-        const fileReader = new FileReader()
-        fileReader.addEventListener('load', () => {
-            this.imageUrl = fileReader.result
-            console.log(this.imageUrl)
-        })
-        fileReader.readAsDataURL(files[0])
-        this.image = files[0]
-    }    
+    onFilePicked(event) {
+      const files = event.target.files;
+      let filename = files[0].name;
+      if (filename.lastIndexOf(".") <= 0) {
+        return alert("Please add a valid file");
+      }
+      const fileReader = new FileReader();
+      fileReader.addEventListener("load", () => {
+        this.imageUrl = fileReader.result;
+        console.log(this.imageUrl);
+      });
+      fileReader.readAsDataURL(files[0]);
+      this.image = files[0];
+    }
   },
-  components:{
-    formularioUser, 
+  components: {
+    formularioUser,
     userInformation
   },
-    created(){
+  created() {
     var este = this;
-        if(firebase.auth().currentUser){
-            this.currentUser = firebase.auth().currentUser.email;
+    if (firebase.auth().currentUser) {
+      this.currentUser = firebase.auth().currentUser.email;
 
-            userRef.orderByChild("email").equalTo(this.currentUser).on("child_added",gotData);
-            function gotData (snapshot) {
-                este.loggedUser = snapshot.val();
-                }
-        }
+      userRef
+        .orderByChild("email")
+        .equalTo(this.currentUser)
+        .on("child_added", gotData);
+      function gotData(snapshot) {
+        este.loggedUser = snapshot.val();
+      }
     }
-}
+  }
+};
 </script>
